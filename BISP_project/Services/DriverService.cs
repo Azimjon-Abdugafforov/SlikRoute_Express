@@ -20,6 +20,32 @@ public class DriverService : IDriverService
         _dataContext = data;
         _authService = auth;
     }
+
+    public async Task<List<Order>> GetDriverQuotes(string name)
+    {
+        try
+        {
+            var orders = await _dataContext.Orders
+                .Where(e => e.Driver.DriverFullName == name)
+                .Include(e=> e.Driver.Truck.TruckImages)
+                .Include(e=> e.Employees)
+                .Include(e=> e.FromDistrict)
+                .Include(e=> e.ToDistrict)
+                .Include(e=> e.Client)
+                .Include(e=> e.ProductImages)
+                .Include(e=> e.EndImage)
+                
+                .ToListAsync();
+
+            return orders;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
     
     public async Task<bool> CreateDriver(DriverDto driver, Image img, Image license, int truckId)
     {

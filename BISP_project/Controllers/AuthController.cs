@@ -12,19 +12,19 @@ using Microsoft.IdentityModel.Tokens;
 namespace BIS_project.Controllers;
 [Route("api/v1/")]
 [ApiController]
-public class AuthController : ControllerBase 
+public class AuthController : ControllerBase
 {
     private readonly IConfiguration _configuration;
     private readonly AuthService _authService;
     private readonly EmployeeService _employee;
-
+    
     public AuthController(AuthService service, IConfiguration configuration, EmployeeService emp)
     {
         _employee = emp;
         _authService = service;
         _configuration = configuration;
     }
-
+    
     [HttpPost("login")]
     public async Task<IActionResult> Login(UserDto request)
     {

@@ -22,6 +22,21 @@ public class DriverController : ControllerBase
         _truckService = truckService;
     }
 
+    [HttpGet(template:"get-driver-order")]
+    public async Task<APIResponse> GetDriverOrders(string name)
+    {
+        try
+        {
+            List<Order> driverOrders = await _driverService.GetDriverQuotes(name);
+            return new APIResponse(200, driverOrders, "");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return new APIResponse(400, "", e.Message);
+        }
+    }
+
     [HttpPost(Name = "createDriver")]
     public async Task<APIResponse> CreateDriver([FromForm] DriverModel model)
     {

@@ -3377,11 +3377,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/azizjonabdugafforov/Desktop/Code/BISP/SlikRoute_Express/BISP_project/BIS_project.csproj",
+      "projectUniqueName": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/BIS_project.csproj",
       "projectName": "BIS_project",
-      "projectPath": "/Users/azizjonabdugafforov/Desktop/Code/BISP/SlikRoute_Express/BISP_project/BIS_project.csproj",
+      "projectPath": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/BIS_project.csproj",
       "packagesPath": "/Users/azizjonabdugafforov/.nuget/packages/",
-      "outputPath": "/Users/azizjonabdugafforov/Desktop/Code/BISP/SlikRoute_Express/BISP_project/obj/",
+      "outputPath": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/azizjonabdugafforov/.nuget/NuGet/NuGet.Config"

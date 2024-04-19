@@ -37,7 +37,6 @@ public class TruckService: ITruckService
             Console.WriteLine(e);
             return null;
         }
-       
     }
 
     public Task<bool> DeleteTruck(int id)
@@ -54,6 +53,6 @@ public class TruckService: ITruckService
     {
         return await _dataContext.Trucks
             .Include(e=>e.TruckImages)
-            .ToListAsync();
+            .ToListAsync(); 
     }
 }
