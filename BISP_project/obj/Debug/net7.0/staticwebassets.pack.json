@@ -1,6 +1,26 @@
 {
   "Files": [
     {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/0118192b-6ad7-4a62-9bc9-e9e4a9747665.jpeg",
+      "PackagePath": "staticwebassets/Drivers/images/0118192b-6ad7-4a62-9bc9-e9e4a9747665.jpeg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/128d3527-bfc2-4aa9-bdbc-d9fc2c9938ce.jpg",
+      "PackagePath": "staticwebassets/Drivers/images/128d3527-bfc2-4aa9-bdbc-d9fc2c9938ce.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/1d7475e8-8410-4954-9a17-a08bb637f10f.jpeg",
+      "PackagePath": "staticwebassets/Drivers/images/1d7475e8-8410-4954-9a17-a08bb637f10f.jpeg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/22105c37-2582-4a23-93dc-d5839200b3aa.jpg",
+      "PackagePath": "staticwebassets/Drivers/images/22105c37-2582-4a23-93dc-d5839200b3aa.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/2858c2c3-31a2-40f5-b80f-180444e37138.jpeg",
+      "PackagePath": "staticwebassets/Drivers/images/2858c2c3-31a2-40f5-b80f-180444e37138.jpeg"
+    },
+    {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/33748cb3-c000-4631-a6a0-b79e6c765406.jpg",
       "PackagePath": "staticwebassets/Drivers/images/33748cb3-c000-4631-a6a0-b79e6c765406.jpg"
     },
@@ -17,8 +37,16 @@
       "PackagePath": "staticwebassets/Drivers/images/5deff0b4-22ee-4757-87ed-4aebe6bd3a5e.png"
     },
     {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/6c606727-3723-4f18-b7d0-9b545cdb350d.jpg",
+      "PackagePath": "staticwebassets/Drivers/images/6c606727-3723-4f18-b7d0-9b545cdb350d.jpg"
+    },
+    {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/709b29e8-0116-4595-afe0-a40af81b00fa.jpg",
       "PackagePath": "staticwebassets/Drivers/images/709b29e8-0116-4595-afe0-a40af81b00fa.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/7b1a3b32-7569-4e72-b702-7a194cb553ac.jpg",
+      "PackagePath": "staticwebassets/Drivers/images/7b1a3b32-7569-4e72-b702-7a194cb553ac.jpg"
     },
     {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/7b855385-54c2-451f-914f-a400b75ffe88.jpg",
@@ -35,6 +63,14 @@
     {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/863b72a4-bb24-4b85-88e3-91a97f3a4fec.png",
       "PackagePath": "staticwebassets/Drivers/images/863b72a4-bb24-4b85-88e3-91a97f3a4fec.png"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/a054c3f7-79f7-4371-9f72-c8b7a4aec174.jpg",
+      "PackagePath": "staticwebassets/Drivers/images/a054c3f7-79f7-4371-9f72-c8b7a4aec174.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/aeb1dfe1-4ed3-4a9f-9f19-084f939f123a.jpeg",
+      "PackagePath": "staticwebassets/Drivers/images/aeb1dfe1-4ed3-4a9f-9f19-084f939f123a.jpeg"
     },
     {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/b3df9b4a-79f0-4c96-846b-ac876deca7ba.png",
@@ -57,6 +93,42 @@
       "PackagePath": "staticwebassets/Drivers/images/c7c9cb6a-0b1e-402b-a541-e3b77bb3c5b7.pdf"
     },
     {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/f63f2ef9-bf39-47dd-8ece-9b87fc1cd0fb.jpg",
+      "PackagePath": "staticwebassets/Drivers/images/f63f2ef9-bf39-47dd-8ece-9b87fc1cd0fb.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Licenses/images/06a4381f-73ff-4598-a8ce-68cbd780b06b.jpg",
+      "PackagePath": "staticwebassets/Licenses/images/06a4381f-73ff-4598-a8ce-68cbd780b06b.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Licenses/images/0d39ab1d-5dd3-410f-870a-e03ab79dbfe5.jpg",
+      "PackagePath": "staticwebassets/Licenses/images/0d39ab1d-5dd3-410f-870a-e03ab79dbfe5.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Licenses/images/2af54ef0-1000-40b9-9c38-96ba904f097f.jpg",
+      "PackagePath": "staticwebassets/Licenses/images/2af54ef0-1000-40b9-9c38-96ba904f097f.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Licenses/images/5b0013b9-1805-4042-ac65-9792a433155a.jpg",
+      "PackagePath": "staticwebassets/Licenses/images/5b0013b9-1805-4042-ac65-9792a433155a.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Licenses/images/6d7744a8-9836-4339-a5f3-c7217ade33ae.jpg",
+      "PackagePath": "staticwebassets/Licenses/images/6d7744a8-9836-4339-a5f3-c7217ade33ae.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Licenses/images/a0e582ab-2a19-4694-ae73-58c90df59cf4.jpg",
+      "PackagePath": "staticwebassets/Licenses/images/a0e582ab-2a19-4694-ae73-58c90df59cf4.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/1185ff29-bad6-4dc1-b362-21785c78f5c2.jpg",
+      "PackagePath": "staticwebassets/Trucks/images/1185ff29-bad6-4dc1-b362-21785c78f5c2.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/181f3b14-409b-4bf7-bd3d-c36869c16372.jpg",
+      "PackagePath": "staticwebassets/Trucks/images/181f3b14-409b-4bf7-bd3d-c36869c16372.jpg"
+    },
+    {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/42fea1f4-fe84-43e6-aacd-449f7b098c9e.jpeg",
       "PackagePath": "staticwebassets/Trucks/images/42fea1f4-fe84-43e6-aacd-449f7b098c9e.jpeg"
     },
@@ -65,8 +137,16 @@
       "PackagePath": "staticwebassets/Trucks/images/55b85ecd-168c-4853-a94b-a2260550c015.jpeg"
     },
     {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/57dc5fa8-830c-4d11-bb1a-7830e3fc7203.jpg",
+      "PackagePath": "staticwebassets/Trucks/images/57dc5fa8-830c-4d11-bb1a-7830e3fc7203.jpg"
+    },
+    {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/5b723761-884f-4811-84f6-fedd5d1d7f3d.jpeg",
       "PackagePath": "staticwebassets/Trucks/images/5b723761-884f-4811-84f6-fedd5d1d7f3d.jpeg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/68a9e914-7bca-48f2-8bbf-ec382bb6be88.jpg",
+      "PackagePath": "staticwebassets/Trucks/images/68a9e914-7bca-48f2-8bbf-ec382bb6be88.jpg"
     },
     {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/68f1dc20-ca0d-4d9e-93aa-3b00e1682bef.png",
@@ -77,8 +157,36 @@
       "PackagePath": "staticwebassets/Trucks/images/76f56905-6f6a-4943-95f1-02447a18f4ee.jpeg"
     },
     {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/8213ab6f-bf3a-4d50-8618-ef93e20b22ad.jpg",
+      "PackagePath": "staticwebassets/Trucks/images/8213ab6f-bf3a-4d50-8618-ef93e20b22ad.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/91a45a4c-cd46-4661-85be-4806361285fb.jpeg",
+      "PackagePath": "staticwebassets/Trucks/images/91a45a4c-cd46-4661-85be-4806361285fb.jpeg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/91af63e9-4390-4093-9e29-97d060712cf6.jpg",
+      "PackagePath": "staticwebassets/Trucks/images/91af63e9-4390-4093-9e29-97d060712cf6.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/956136ba-e351-4fa9-8d9b-354f2f21b5d6.jpeg",
+      "PackagePath": "staticwebassets/Trucks/images/956136ba-e351-4fa9-8d9b-354f2f21b5d6.jpeg"
+    },
+    {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/af82e706-dbff-4166-b748-c1d5937af68e.jpeg",
       "PackagePath": "staticwebassets/Trucks/images/af82e706-dbff-4166-b748-c1d5937af68e.jpeg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/e0b81d13-af17-4abc-b230-c563c48fc0e2.jpg",
+      "PackagePath": "staticwebassets/Trucks/images/e0b81d13-af17-4abc-b230-c563c48fc0e2.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/eb43134b-bcf7-410b-8c84-9be2814e5496.jpg",
+      "PackagePath": "staticwebassets/Trucks/images/eb43134b-bcf7-410b-8c84-9be2814e5496.jpg"
+    },
+    {
+      "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/fe71b6aa-da23-4f8d-bfd8-50e499f8b785.jpg",
+      "PackagePath": "staticwebassets/Trucks/images/fe71b6aa-da23-4f8d-bfd8-50e499f8b785.jpg"
     },
     {
       "Id": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/assets/images/ada800ba-9821-434d-b788-82151a26e882.jpeg",

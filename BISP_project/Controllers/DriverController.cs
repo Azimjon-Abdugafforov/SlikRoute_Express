@@ -51,14 +51,15 @@ public class DriverController : ControllerBase
                 TruckStatus = model.Driver.TruckStatus
             };
             var truckCreated = await _truckService.CreateTruck(truck, truckImages);
-            if (truckCreated != null && truckCreated.Id != 0)   
+            if (truckCreated != null && truckCreated.Id != 0)
             {
                 var img = await _saver.FileSaveAsync(model.Photo, "Drivers/images");
-                var license = await _saver.FileSaveAsync(model.License, "Drivers/images");
+                Console.WriteLine(img);
+                var license = await _saver.FileSaveAsync(model.License, "Licenses/images");
                 var result = await _driverService.CreateDriver(model.Driver, img, license, truckCreated.Id);
-                return new APIResponse(200, result, ""); 
+                return new APIResponse(200, result, "");
             }
-            return new APIResponse(500, "", "error occured while saving the driver");
+            return new APIResponse(500, "", "Error occurred while saving the driver");
         }
         catch (Exception e)
         {
@@ -66,6 +67,7 @@ public class DriverController : ControllerBase
             return new APIResponse(500, "", e.Message);
         }
     }
+
     [HttpGet(Name = "getDrivers")]
     public async Task<APIResponse> GetDrivers()
     {

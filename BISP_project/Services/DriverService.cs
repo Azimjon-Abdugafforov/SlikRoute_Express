@@ -54,6 +54,7 @@ public class DriverService : IDriverService
             var d = new Driver()
             {
                 Truck = await _dataContext.Trucks.FindAsync(truckId),
+                Branch = await _dataContext.Branches.FindAsync(driver.BranchId),
                 Status = "Available to ship",
                 DriverFullName = driver.DriverFullName,
                 IsActive = true,
@@ -61,17 +62,17 @@ public class DriverService : IDriverService
                 DriverPhoto = img,
                 LicensePhoto = license,
                 PhoneNumber = driver.PhoneNumber, 
-                Branch = await _dataContext.Branches.FindAsync(driver.BranchId)
             };
             await _dataContext.Drivers.AddAsync(d);
-            await _dataContext.SaveChangesAsync();
-            var user = new UserRegisterDto()
-            {
-                Firstname = driver.DriverFullName,
-                Password = GenerateRandomPassword(),
-                Username = driver.Email,
-            };
-            await _authService.DriverRegister(user);
+            var created =  await _dataContext.SaveChangesAsync();
+            // Console.WriteLine(created);
+            // var user = new UserRegisterDto()
+            // {
+            //     Firstname = driver.DriverFullName,
+            //     Password = GenerateRandomPassword(),
+            //     Username = driver.Email,
+            // };
+            // await _authService.DriverRegister(user);
             return true;
         }
         catch (Exception e)
