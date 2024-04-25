@@ -211,29 +211,22 @@ public class OrderService : IOrderService
         }
     }
 
-    public async Task<Order> UpdateOrder(UpdateOrderDto order, List<Image> imgs)
+    public async Task<Order> UpdateOrder(string comment, List<Image> imgs, int id)
     {
         try
         {
             var foundOrder = await _dataContext.Orders
-                .Where(e=> e.Client != null && e.Client.Email == order.Username)
-                .Include(e => e.Client)
-                .Include(e => e.Employees)
-                .Include(e => e.FromDistrict!.Region)
-                .Include(e => e.ToDistrict!.Region)
-                .Include(e => e.ProductImages)
-                .Include(e => e.EndImage)
-                .Include(e=> e.ProductImages)
-                .Include(e=>e.Driver)
-                .FirstOrDefaultAsync();
-            if (foundOrder != null)
+                .FindAsync(id);
+
+            if (foundOrder.Id == null)
             {
-                foundOrder.Comment = order.Comment;
-                foundOrder.ProductImages = imgs;
-                await _dataContext.SaveChangesAsync();
-                return foundOrder;
+                return null;
             }
-            return null;
+            foundOrder.Comment = comment;
+            foundOrder.ProductImages = imgs;
+          
+            await _dataContext.SaveChangesAsync();
+            return foundOrder;
         }
         catch (Exception e)
         {
@@ -241,6 +234,7 @@ public class OrderService : IOrderService
             return null;
         }
     }
+
     
     private async Task<User> CreateUser(BaseOrderDto order)
     {

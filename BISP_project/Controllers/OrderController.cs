@@ -40,24 +40,23 @@ public class OrderController : ControllerBase
             throw;
         }
     }
-    [HttpPut("user/update", Name = "GenerateOrder")]
-    public async Task<IActionResult> GenerateOrder()
+    [HttpPut("user/update/{id}", Name = "GenerateOrder")]
+    public async Task<APIResponse> GenerateOrder(int id, [FromForm] UpdateOrderDto dto)
     {
         try
         {
-            var orderData = JsonConvert.DeserializeObject<UpdateOrderDto>(Request.Form["order"]);
-            List<Image> images = await _fileSaver.UploadFiles(Request.Form.Files, "orders/images");
-            var result = await _orderService.UpdateOrder(orderData, images);
+            List<Image> images = await _fileSaver.UploadFiles(dto.images, "orders/images");
+            var result = await _orderService.UpdateOrder(dto.Comment, images, id);
             if (result == null)
             {
-                return BadRequest("Orders not found");
+                return new APIResponse(400, null, "Order nor found");
             }
             var res = Ok(result);
-            return res;
+            return new APIResponse(200, res, "");
         }
         catch (Exception e)
         {
-            return BadRequest(e.Message);
+            return new APIResponse(400, null, e.Message);
         }
     }
 
