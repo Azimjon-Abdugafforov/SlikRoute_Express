@@ -1,0 +1,7 @@
+2024-04-26 00:35:12.760 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8e585fb9-e477-4c8c-b1d3-c1a47696423d.JPG - -
+2024-04-26 00:35:12.922 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-04-26 00:35:12.928 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8e585fb9-e477-4c8c-b1d3-c1a47696423d.JPG - - - 404 0 - 174.1469ms
+2024-04-26 00:37:39.316 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Orders/images/8e585fb9-e477-4c8c-b1d3-c1a47696423d.JPG - -
+2024-04-26 00:37:39.326 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Orders/images/8e585fb9-e477-4c8c-b1d3-c1a47696423d.JPG - - - 404 0 - 65.8345ms
+2024-04-26 00:37:57.408 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8e585fb9-e477-4c8c-b1d3-c1a47696423d.JPG - -
+2024-04-26 00:37:57.411 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8e585fb9-e477-4c8c-b1d3-c1a47696423d.JPG - - - 404 0 - 3.7290ms

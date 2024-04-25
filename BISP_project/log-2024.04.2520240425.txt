@@ -1580,3 +1580,12 @@
 2024-04-25 16:52:16.878 +05:00 [INF] Executed action BIS_project.Controllers.BranchController.GetAllAsync (BIS_project) in 3219.3748ms
 2024-04-25 16:52:16.878 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
 2024-04-25 16:52:16.879 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - - - 0 - application/json;+charset=utf-8 3225.8170ms
+2024-04-25 20:12:38.444 +05:00 [INF] User profile is available. Using '/Users/azizjonabdugafforov/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-04-25 20:12:38.946 +05:00 [INF] Now listening on: http://localhost:5279
+2024-04-25 20:12:38.947 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-25 20:12:38.947 +05:00 [INF] Hosting environment: Development
+2024-04-25 20:12:38.947 +05:00 [INF] Content root path: /Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project
+2024-04-25 20:12:42.426 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/index.html - -
+2024-04-25 20:12:42.511 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/index.html - - - 200 - text/html;charset=utf-8 87.5584ms
+2024-04-25 20:12:42.735 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - -
+2024-04-25 20:12:42.931 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 195.8550ms
