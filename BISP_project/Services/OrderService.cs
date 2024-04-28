@@ -4,10 +4,8 @@ using BIS_project.Helper;
 using BIS_project.IServices;
 using BIS_project.Models;
 using MailKit.Net.Smtp;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using MimeKit;
-using Org.BouncyCastle.Asn1.Cms;
 
 namespace BIS_project.Services;
 public class OrderService : IOrderService
@@ -42,6 +40,28 @@ public class OrderService : IOrderService
         }
     }
 
+    public async Task<bool> setOrderCost(int id, int cost, float distance)
+    {
+        try
+        {
+            Order foundOrder = await _dataContext.Orders.FindAsync(id);
+            if (foundOrder == null) // Check if the order is not found
+            {
+                return false; // Return false if the order is not found
+            }
+            foundOrder.TotalAmount = cost;
+            foundOrder.Distance = distance;// Update the total amount
+            _dataContext.SaveChanges(); // Save changes to the database
+            return true; // Return true indicating the order was found and updated
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return false; // Return false if an exception occurs
+        }
+    }
+
+
     public async Task<List<Order?>> GetOrderByClient(string username)
     {
         try
@@ -49,7 +69,6 @@ public class OrderService : IOrderService
             var client = await _dataContext.Client.FirstOrDefaultAsync(e => e.Email == username);
 
             var order = await _dataContext.Orders
-                .Where(e=> e.Status == "CREATED")
                 .Where(e => e.Client.Id == client.Id)
                 .Include(e=> e.Employees)
                 .Include(e=> e.ProductImages)
@@ -102,80 +121,151 @@ public class OrderService : IOrderService
         }
     }
 
-    public async Task<bool> AppendEmployee(int orderId, int driverId, List<int> emps)
-    {
-        try
-        {
-            var order = await _dataContext.Orders.FindAsync(orderId);
-            
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            return false;
-        }
-        
-        return true;
-    }
+   
     public async Task<Order?> GetOrderById(int id)
     {
         return await _dataContext.Orders.FindAsync(id);
     }
 
-    public async Task<APIResponse> CreateBaseOrder(BaseOrderDto order)
+public async Task<Driver> SetDriver(BaseOrderDto order)
+{
+    try
     {
-        try
+        var region = await _dataContext.Regions.FindAsync(order.FromRegion);
+        var driver = await _dataContext.Drivers.FirstOrDefaultAsync(e => e.Branch.Region.RegionName == region.RegionName && e.IsActive && e.Email.Length > 0);
+        if(driver == null)
         {
-            var orderExist = await _dataContext.Orders
-                .Where(e=> e.Client.Email == order.Email)
-                .ToListAsync();
-            if (!orderExist.Any(e=>e.Status == "CREATED"))
-            {
-                var o = new Order()
-                {
-                    EndPoint = order.EndPoint,
-                    StartPoint = order.StartPoint,
-                    FromDistrict = await _dataContext.Districts.FindAsync(order.FromDistrict),
-                    FromRegion = await _dataContext.Regions.FindAsync(order.FromRegion),
-                    ToDistrict = await _dataContext.Districts.FindAsync(order.ToDistrict),
-                    ToRegion = await _dataContext.Regions.FindAsync(order.ToRegion),
-                    Services = order.Services,
-                    LoadDayTime = order.LoadDayTime,
-                    FromLoadTime = order.FromLoadTime,
-                    ToLoadTime = order.ToLoadTime,
-                    PaymentType = order.PaymentType,
-                    HomeType = order.HomeType,
-                    CreatedAt = DateTime.UtcNow,
-                    Client = await CreteClient(order),
-                    Status = "CREATED",
-                };
-                if (o.Client == null)
-                {
-                    return new APIResponse(500, "", "client cannot be saved");
-                }
-            
-                await _dataContext.Orders.AddAsync(o);
-                await _dataContext.SaveChangesAsync();
-            
-                await CreateUser(order);
-                return new APIResponse(200, "Order saved successfully!", "");
-            }
-            else
-            {
-                return new APIResponse(400, "", "you already have an order with status of CREATED");
-            }
-     
+            return null;
         }
-        catch (Exception e)
+        if(driver != null)
         {
-            Console.WriteLine("Outer Exception: " + e.Message);
-            if (e.InnerException != null)
+            driver.Status = "Busy";
+            driver.IsActive = false;
+            _dataContext.SaveChanges();
+        }
+       
+        return driver;
+    }
+    catch (Exception e)
+    {
+        
+        Console.WriteLine(e);
+        throw;
+    }
+}
+public async Task<APIResponse> CreateBaseOrder(BaseOrderDto order)
+{
+    try
+    {
+        var existingOrder = await _dataContext.Orders
+            .FirstOrDefaultAsync(e => e.Client.Email == order.Email);
+        if (existingOrder != null)
+        {
+            if (existingOrder.Status == "CREATED" || existingOrder.Status == "APPENDED")
             {
-                Console.WriteLine("Inner Exception: " + e.InnerException.Message);
+                return new APIResponse(400, "", "You have already created an order. Please wait for the driver to accept it.");
             }
-            return new APIResponse(500, "", e.Message);
+        }
+
+       
+                
+        
+        var driver = await SetDriver(order);
+
+        if (driver == null)
+        {
+            return new APIResponse(400, "", "we are sorry but currently we have high demand for drivers. Please try again later.");
+        }
+        var client = await CreteClient(order);
+
+      
+
+        var fromDistrict = await _dataContext.Districts.FindAsync(order.FromDistrict);
+        var fromRegion = await _dataContext.Regions.FindAsync(order.FromRegion);
+        var toDistrict = await _dataContext.Districts.FindAsync(order.ToDistrict);
+        var toRegion = await _dataContext.Regions.FindAsync(order.ToRegion);
+
+        var newOrder = new Order()
+        {
+            Driver = driver,
+            FromDistrict = fromDistrict,
+            FromRegion = fromRegion,
+            ToDistrict = toDistrict,
+            ToRegion = toRegion,
+            EndPoint = order.EndPoint,
+            StartPoint = order.StartPoint,
+            Services = order.Services,
+            LoadDayTime = order.LoadDayTime,
+            FromLoadTime = order.FromLoadTime,
+            ToLoadTime = order.ToLoadTime,
+            PaymentType = order.PaymentType,
+            HomeType = order.HomeType,
+            CreatedAt = DateTime.UtcNow,
+            Client = client,
+            Status = order.Status,
+        };
+
+        if (newOrder.Client == null || newOrder.Driver == null)
+        {
+            return new APIResponse(500, "", "We are sorry, but we could not create an order for you at this time. Please try again later.");
+        }
+
+        if (newOrder.Driver != null)
+        {
+            newOrder.Status = "APPENDED";
+            _dataContext.SaveChanges();
+            await reportDriver(driver.Email, driver.DriverFullName, driver.DriverFullName);
+        }
+
+        await _dataContext.Orders.AddAsync(newOrder);
+        await _dataContext.SaveChangesAsync();
+
+        await CreateUser(order);
+
+        return new APIResponse(200, "Order saved successfully!", "");
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine("Outer Exception: " + e.Message);
+        if (e.InnerException != null)
+        {
+            Console.WriteLine("Inner Exception: " + e.InnerException.Message);
+        }
+        return new APIResponse(500, "", e.Message);
+    }
+}
+private async Task reportDriver(string toEmail, string username, string Name)
+{
+    try 
+    {
+        var message = new MimeMessage();
+        message.From.Add(new MailboxAddress("SilkRoute Express", "abdugafforovazimjon33@gmail.com"));
+        message.To.Add(new MailboxAddress(username, toEmail));
+        message.Subject = "New order received";
+        var bodyBuilder = new BodyBuilder();
+        bodyBuilder.TextBody = $"Dear {Name},\n\nYou have a new order\n\n" +
+                            
+                               $"\n\nYou can see the order details by visiting in your account" +
+                               $"\n\nHave a nice trip" +
+                               $"\n\nWe appreciate your trust in our company  " +
+                               $"here to assist you with any questions or concerns. If you have any feedback or need assistance, please don't " +
+                               $"hesitate to contact us.\n\nBest regards,\nThe SilkRoute Express Team";
+        message.Body = bodyBuilder.ToMessageBody();
+        using (var client = new SmtpClient())
+        {
+            await client.ConnectAsync("smtp.gmail.com", 587, false);
+            await client.AuthenticateAsync("abdugafforovazimjon33@gmail.com", "fzazphmwefownyub");
+            await client.SendAsync(message);
+            await client.DisconnectAsync(true);
         }
     }
+    catch (Exception e)
+    {
+        Console.WriteLine(e);
+    }
+}
+
+    
     private async Task<Client?> CreteClient(BaseOrderDto order)
     {
         try

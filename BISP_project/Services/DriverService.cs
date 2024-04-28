@@ -21,12 +21,22 @@ public class DriverService : IDriverService
         _authService = auth;
     }
 
-    public async Task<List<Order>> GetDriverQuotes(string name)
+    public async Task<Order> GetDriverQuotes(string email)
     {
         try
         {
+            // var orders = await _dataContext.Orders
+            //     .Where(e => e.Driver.Email == email)
+            //     .Include(e=> e.Driver.Truck.TruckImages)
+            //     .Include(e=> e.Employees)
+            //     .Include(e=> e.FromDistrict)
+            //     .Include(e=> e.ToDistrict)
+            //     .Include(e=> e.Client)
+            //     .Include(e=> e.ProductImages)
+            //     .Include(e=> e.EndImage)
+            //     .ToListAsync();
+            
             var orders = await _dataContext.Orders
-                .Where(e => e.Driver.DriverFullName == name)
                 .Include(e=> e.Driver.Truck.TruckImages)
                 .Include(e=> e.Employees)
                 .Include(e=> e.FromDistrict)
@@ -34,9 +44,12 @@ public class DriverService : IDriverService
                 .Include(e=> e.Client)
                 .Include(e=> e.ProductImages)
                 .Include(e=> e.EndImage)
-                
-                .ToListAsync();
+                .FirstOrDefaultAsync(e=> e.Driver.Email == email);
 
+            if (orders == null)
+            {
+                return new Order();
+            }
             return orders;
         }
         catch (Exception e)
@@ -51,11 +64,18 @@ public class DriverService : IDriverService
     {
         try
         {
+            var existingDriver = await _dataContext.Drivers.FirstOrDefaultAsync(d => d.Email == driver.Email);
+            if (existingDriver != null)
+            {
+                return false;
+            }
+
             var d = new Driver()
             {
                 Truck = await _dataContext.Trucks.FindAsync(truckId),
                 Branch = await _dataContext.Branches.FindAsync(driver.BranchId),
                 Status = "Available to ship",
+                Email = driver.Email,
                 DriverFullName = driver.DriverFullName,
                 IsActive = true,
                 DateOfBirth = driver.DateOfBirth,
@@ -64,23 +84,22 @@ public class DriverService : IDriverService
                 PhoneNumber = driver.PhoneNumber, 
             };
             await _dataContext.Drivers.AddAsync(d);
-            var created =  await _dataContext.SaveChangesAsync();
-            // Console.WriteLine(created);
-            // var user = new UserRegisterDto()
-            // {
-            //     Firstname = driver.DriverFullName,
-            //     Password = GenerateRandomPassword(),
-            //     Username = driver.Email,
-            // };
-            // await _authService.DriverRegister(user);
+            await _dataContext.SaveChangesAsync();
+            var user = new UserRegisterDto()
+            {
+                Firstname = driver.DriverFullName,
+                Password = GenerateRandomPassword(),
+                Username = driver.Email,
+            };
+            await _authService.DriverRegister(user);
             return true;
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
             return false;
         }
     }
+
     private string GenerateRandomPassword()
     {
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

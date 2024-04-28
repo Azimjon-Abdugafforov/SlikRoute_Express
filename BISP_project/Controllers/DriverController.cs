@@ -22,12 +22,12 @@ public class DriverController : ControllerBase
         _truckService = truckService;
     }
 
-    [HttpGet(template:"get-driver-order")]
-    public async Task<APIResponse> GetDriverOrders(string name)
+    [HttpGet(template:"get-driver-order")]  
+    public async Task<APIResponse> GetDriverOrders(string email)
     {
         try
         {
-            List<Order> driverOrders = await _driverService.GetDriverQuotes(name);
+            Order driverOrders = await _driverService.GetDriverQuotes(email);
             return new APIResponse(200, driverOrders, "");
         }
         catch (Exception e)

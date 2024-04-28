@@ -89,6 +89,12 @@ public class OrderController : ControllerBase
         }
     }
 
+    [HttpPut("set-cost/{id}", Name = "SetOrderCost")]
+    public async Task<APIResponse> SetOrderCost(int id, int cost, float distance )
+    {
+        return new APIResponse(200, result: await _orderService.setOrderCost(id, cost, distance), "");
+    }
+
     [HttpPut("upload-start-photos", Name = "UploadPhotos")]
     public async Task<IActionResult> UploadPhotos(int id, IFormFileCollection files)
     {

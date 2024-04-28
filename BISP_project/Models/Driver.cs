@@ -17,4 +17,5 @@ public class Driver
     public bool IsActive { get; set; }
     public string Status { get; set; } = string.Empty;
     public Branch Branch { get; set; }
+    public string? Email { get; set; }
 }
