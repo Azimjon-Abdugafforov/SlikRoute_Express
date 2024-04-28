@@ -4482,3 +4482,90 @@ System.TimeoutException: The operation has timed out.
 2024-04-28 18:03:19.862 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 3384.7885ms
 2024-04-28 18:03:19.862 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
 2024-04-28 18:03:19.862 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 200 - application/json;+charset=utf-8 3540.5163ms
+2024-04-28 19:06:06.823 +05:00 [INF] User profile is available. Using '/Users/azizjonabdugafforov/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-04-28 19:06:06.919 +05:00 [INF] Now listening on: http://localhost:5279
+2024-04-28 19:06:06.920 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-28 19:06:06.920 +05:00 [INF] Hosting environment: Development
+2024-04-28 19:06:06.920 +05:00 [INF] Content root path: /Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project
+2024-04-28 19:06:07.806 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/index.html - -
+2024-04-28 19:06:07.905 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/index.html - - - 200 - text/html;charset=utf-8 100.3612ms
+2024-04-28 19:06:08.149 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - -
+2024-04-28 19:06:08.233 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.2833ms
+2024-04-28 19:06:14.573 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:06:14.676 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-04-28 19:06:14.677 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:06:14.678 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 204 - - 105.3362ms
+2024-04-28 19:06:14.679 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:06:14.806 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:06:14.808 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:06:14.826 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-28 19:06:23.020 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-28 19:06:23.106 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 8276.1031ms
+2024-04-28 19:06:23.110 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:06:23.120 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 200 - application/json;+charset=utf-8 8440.5554ms
+2024-04-28 19:07:42.468 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:07:42.482 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:07:42.483 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 204 - - 16.3603ms
+2024-04-28 19:07:42.485 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:07:42.493 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:07:42.493 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:07:42.494 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-28 19:07:44.998 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-28 19:07:45.002 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2506.4292ms
+2024-04-28 19:07:45.002 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:07:45.002 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 200 - application/json;+charset=utf-8 2517.4203ms
+2024-04-28 19:08:26.226 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:08:26.233 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:08:26.234 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 204 - - 8.4359ms
+2024-04-28 19:08:26.236 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:08:26.238 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:08:26.238 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:08:26.239 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-28 19:08:28.549 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-28 19:08:28.551 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2311.8502ms
+2024-04-28 19:08:28.551 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:08:28.552 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 200 - application/json;+charset=utf-8 2315.8096ms
+2024-04-28 19:10:47.194 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:10:47.199 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:10:47.199 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 204 - - 8.1328ms
+2024-04-28 19:10:47.296 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:10:47.301 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:10:47.301 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:10:47.303 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-28 19:10:51.570 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-28 19:10:51.574 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 4249.185ms
+2024-04-28 19:10:51.574 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:10:51.575 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 200 - application/json;+charset=utf-8 4278.6557ms
+2024-04-28 19:11:34.835 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:11:34.839 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:11:34.840 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 204 - - 6.3794ms
+2024-04-28 19:11:34.844 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:11:34.848 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:11:34.848 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:11:34.849 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-28 19:11:39.470 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-28 19:11:39.476 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 4627.083ms
+2024-04-28 19:11:39.477 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:11:39.477 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 200 - application/json;+charset=utf-8 4633.3053ms
+2024-04-28 19:13:38.493 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:13:38.496 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:13:38.497 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 204 - - 3.7800ms
+2024-04-28 19:13:38.498 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:13:38.499 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:13:38.500 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:13:38.501 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-28 19:13:41.036 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-28 19:13:41.039 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2537.5257ms
+2024-04-28 19:13:41.040 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:13:41.040 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 200 - application/json;+charset=utf-8 2542.1367ms
+2024-04-28 19:13:47.835 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:13:47.854 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:13:47.856 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 204 - - 21.4143ms
+2024-04-28 19:13:47.863 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - -
+2024-04-28 19:13:47.869 +05:00 [INF] CORS policy execution successful.
+2024-04-28 19:13:47.870 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:13:47.870 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-28 19:13:50.600 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-28 19:13:50.603 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2731.8249ms
+2024-04-28 19:13:50.603 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-28 19:13:50.604 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=azizjonabdugafforov69@gmail.com - - - 200 - application/json;+charset=utf-8 2740.9870ms

@@ -74,6 +74,7 @@ public class OrderService : IOrderService
                 .Include(e=> e.ProductImages)
                 .Include(e=> e.Client)
                 .Include(e=> e.Driver.Truck.TruckImages)
+                .Include(e=> e.FromRegion)
                 .Include(e=> e.FromDistrict)
                 .Include(e=> e.ToDistrict)
                 .Include(e=> e.ToRegion)
