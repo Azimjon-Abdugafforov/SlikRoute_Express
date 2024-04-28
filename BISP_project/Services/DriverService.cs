@@ -25,21 +25,12 @@ public class DriverService : IDriverService
     {
         try
         {
-            // var orders = await _dataContext.Orders
-            //     .Where(e => e.Driver.Email == email)
-            //     .Include(e=> e.Driver.Truck.TruckImages)
-            //     .Include(e=> e.Employees)
-            //     .Include(e=> e.FromDistrict)
-            //     .Include(e=> e.ToDistrict)
-            //     .Include(e=> e.Client)
-            //     .Include(e=> e.ProductImages)
-            //     .Include(e=> e.EndImage)
-            //     .ToListAsync();
-            
             var orders = await _dataContext.Orders
                 .Include(e=> e.Driver.Truck.TruckImages)
                 .Include(e=> e.Employees)
                 .Include(e=> e.FromDistrict)
+                .Include(e=> e.FromRegion)
+                .Include(e=> e.ToRegion)
                 .Include(e=> e.ToDistrict)
                 .Include(e=> e.Client)
                 .Include(e=> e.ProductImages)

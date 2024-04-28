@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BIS_project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d6208d66a8989f0c958ae5ba77900b31e7e5b01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57b31eb3597b160663f0c9577dd7daea18d59af0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BIS_project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BIS_project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

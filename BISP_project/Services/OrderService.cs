@@ -74,11 +74,10 @@ public class OrderService : IOrderService
                 .Include(e=> e.ProductImages)
                 .Include(e=> e.Client)
                 .Include(e=> e.Driver.Truck.TruckImages)
-                .Include(e=> e.FromRegion)
+                .Include(e=> e.FromRegion.RegionName)
                 .Include(e=> e.FromDistrict)
                 .Include(e=> e.ToDistrict)
-                .Include(e=> e.ToRegion)
-                .Include(e=> e.FromRegion)
+                .Include(e=> e.ToRegion.RegionName)
                 .Include(e=> e.StartImage)
                 .Include(e=> e.EndImage)
                 .ToListAsync();
@@ -439,7 +438,7 @@ private async Task reportDriver(string toEmail, string username, string Name)
             var o = await _dataContext.Orders
                 .Include(e => e.StartImage)
                 .FirstOrDefaultAsync(e => e.Id == id);
-            if (o == null)
+            if (o == null || o.Status == "SHIPPING")
             {
                 return "Invalid order Id";
             }
@@ -471,6 +470,26 @@ private async Task reportDriver(string toEmail, string username, string Name)
         {
             Console.WriteLine(e);
             return "something went wrong";
+        }
+    }
+    public async Task<bool> FinishShipping(int id)
+    {
+        try
+        {
+            Order o = await _dataContext.Orders.FindAsync(id);
+            if (o == null || o.Status == "FINISHED")
+            {
+                return false;
+            }
+            o.Status = "FINISHED";
+            o.FinishTime = DateTime.UtcNow;
+            await _dataContext.SaveChangesAsync();
+            return true;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            return false;
         }
     }
     

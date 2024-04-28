@@ -110,8 +110,8 @@ public class OrderController : ControllerBase
             return BadRequest("some error occured!");
         }
     }
-    [HttpPut("start-ship", Name = "StartShipDriver")]
-    public async Task<IActionResult> StartShipDriver(int id)
+        [HttpPut("start-ship", Name = "StartShipDriver")]
+        public async Task<IActionResult> StartShipDriver(int id)
     {
         try
         {
@@ -126,7 +126,7 @@ public class OrderController : ControllerBase
     [HttpPut("finish-ship", Name = "FinishShip")]
     public async Task<IActionResult> FinishShip(int id)
     {
-        return Ok(id);
+        return Ok(await _orderService.FinishShipping(id));
     }
 
     [HttpPut("rate-order", Name = "RatingOrder")]
