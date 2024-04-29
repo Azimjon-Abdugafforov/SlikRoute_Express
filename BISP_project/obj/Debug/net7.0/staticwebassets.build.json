@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CluJTretXUfUnRzvDsdywhTJwQGCnbm3EepZRfFSvxQ=",
+  "Hash": "+hfV0tSDMskTi7OvAj7caHun17wdlUedhC9CuGCHx3c=",
   "Source": "BIS_project",
   "BasePath": "_content/BIS_project",
   "Mode": "Default",
@@ -490,6 +490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Drivers/images/a14ea81b-7242-4888-89c4-2f1608021bc7.jpeg"
+    },
+    {
+      "Identity": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg",
+      "SourceId": "BIS_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/",
+      "BasePath": "_content/BIS_project",
+      "RelativePath": "Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg"
     },
     {
       "Identity": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Drivers/images/aeb1dfe1-4ed3-4a9f-9f19-084f939f123a.jpeg",
@@ -1307,6 +1326,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Licenses/images/1ba02eae-5637-4db4-8bb3-893364754d89.jpeg"
+    },
+    {
+      "Identity": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Licenses/images/1cf8c169-512d-445a-83a8-a395fb45a5c5.jpeg",
+      "SourceId": "BIS_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/",
+      "BasePath": "_content/BIS_project",
+      "RelativePath": "Licenses/images/1cf8c169-512d-445a-83a8-a395fb45a5c5.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Licenses/images/1cf8c169-512d-445a-83a8-a395fb45a5c5.jpeg"
     },
     {
       "Identity": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Licenses/images/28653d65-2483-4ead-b400-9a6fdf203e5b.JPG",
@@ -3207,6 +3245,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Trucks/images/9a0da40b-9fd7-487f-b07d-6aed5ed5d55a.jpg"
+    },
+    {
+      "Identity": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/9ca1166e-5122-493d-9489-3485999f5557.jpeg",
+      "SourceId": "BIS_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/",
+      "BasePath": "_content/BIS_project",
+      "RelativePath": "Trucks/images/9ca1166e-5122-493d-9489-3485999f5557.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Trucks/images/9ca1166e-5122-493d-9489-3485999f5557.jpeg"
     },
     {
       "Identity": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/Trucks/images/9cf8d22a-e570-4744-ad9e-5cb97d753cc6.jpg",

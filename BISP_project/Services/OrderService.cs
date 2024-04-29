@@ -62,31 +62,29 @@ public class OrderService : IOrderService
     }
 
 
-    public async Task<List<Order?>> GetOrderByClient(string username)
+    public async Task<Order?> GetOrderByClient(string username)
     {
         try
         {
-            var client = await _dataContext.Client.FirstOrDefaultAsync(e => e.Email == username);
 
             var order = await _dataContext.Orders
-                .Where(e => e.Client.Id == client.Id)
-                .Include(e=> e.Employees)
-                .Include(e=> e.ProductImages)
                 .Include(e=> e.Client)
-                .Include(e=> e.Driver.Truck.TruckImages)
-                .Include(e=> e.FromRegion.RegionName)
                 .Include(e=> e.FromDistrict)
+                .Include(e=> e.FromRegion)
                 .Include(e=> e.ToDistrict)
-                .Include(e=> e.ToRegion.RegionName)
+                .Include(e=> e.ToRegion)
                 .Include(e=> e.StartImage)
+                .Include(e=> e.ProductImages)
                 .Include(e=> e.EndImage)
-                .ToListAsync();
+                .Include(e=> e.Driver.Truck.TruckImages)
+                .FirstOrDefaultAsync(e => e.Client.Email == username);
+             
             return order;
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
-            return new List<Order?>();
+            return new ();
         }
     }
 
@@ -213,7 +211,6 @@ public async Task<APIResponse> CreateBaseOrder(BaseOrderDto order)
         if (newOrder.Driver != null)
         {
             newOrder.Status = "APPENDED";
-            _dataContext.SaveChanges();
             await reportDriver(driver.Email, driver.DriverFullName, driver.DriverFullName);
         }
 
