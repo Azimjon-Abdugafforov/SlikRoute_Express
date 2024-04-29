@@ -22,6 +22,7 @@ public class OrderService : IOrderService
         try
         {
             return await _dataContext.Orders
+                .Where(e=> e.Status != "FINISHED")   
                 .Include(e => e.Client)
                 .Include(e => e.Employees)
                 .Include(e => e.FromDistrict!.Region)
@@ -329,27 +330,27 @@ private async Task reportStatus(string toEmail, string username, string Name, st
         {
             Client clientExists = await _dataContext.Client.FirstOrDefaultAsync(e => e.Email == order.Email);
 
-            if (clientExists == null)
+            if (clientExists != null)
             {
-                var client = new Client
-                {
-                    Email = order.Email,
-                    
-                    Name = order.FullName,
-                    PhoneNumber = order.PhoneNumber,
-                    TotalSpent = await CalculateTotalSpent(await _dataContext.Orders
-                        .Where(e => e.Client.Name == order.FullName)
-                        .ToListAsync()),
-                    NumberOfOrders = await CalculateOrders(await _dataContext.Orders
-                        .Where(e => e.Client.Name == order.FullName)
-                        .ToListAsync())
-                };
-                await _dataContext.Client.AddAsync(client);
-                await _dataContext.SaveChangesAsync();
-                return client;
+                return clientExists;
+                
             }
-            return clientExists;
-           
+            var client = new Client
+            {
+                Email = order.Email,
+                    
+                Name = order.FullName,
+                PhoneNumber = order.PhoneNumber,
+                TotalSpent = await CalculateTotalSpent(await _dataContext.Orders
+                    .Where(e => e.Client.Name == order.FullName)
+                    .ToListAsync()),
+                NumberOfOrders = await CalculateOrders(await _dataContext.Orders
+                    .Where(e => e.Client.Name == order.FullName)
+                    .ToListAsync())
+            };
+            await _dataContext.Client.AddAsync(client);
+            await _dataContext.SaveChangesAsync();
+            return client;           
         }
         catch (Exception e)
         {
@@ -388,9 +389,15 @@ private async Task reportStatus(string toEmail, string username, string Name, st
         try
         {
             var userExists = await _dataContext.Users.FirstOrDefaultAsync(e => e.UserName == order.Email);
-    
-            if (userExists == null)
-            { 
+
+            if (userExists != null)
+            {
+                return userExists;
+            }
+
+            
+                
+                
                 var newUser = new User
                 {
                     IsActive = true,
@@ -402,8 +409,7 @@ private async Task reportStatus(string toEmail, string username, string Name, st
                 await _dataContext.Users.AddAsync(newUser);
                 await _dataContext.SaveChangesAsync();
                 await SendEmail(order.Email, newUser.UserName, order.FullName, newUser.Password);
-                return newUser;
-            }
+            
             await SendEmail(order.Email, userExists.UserName, order.FullName, userExists.Password);
             return userExists;
         }
@@ -596,5 +602,22 @@ private async Task reportStatus(string toEmail, string username, string Name, st
 
         return orders; 
     }
+
+    public async Task<List<Order>> getAdminArchives()
+    {
+        List<Order> orders = await _dataContext.Orders.Where(e => e.Status == "FINISHED")
+            .Include(e => e.ProductImages)
+            .Include(e => e.FromDistrict)
+            .Include(e => e.FromRegion)
+            .Include(e => e.ToRegion)
+            .Include(e => e.ToDistrict)
+            .Include(e => e.Client)
+            .Include(e => e.Driver.Truck)
+            .Include(e => e.EndImage)
+            .ToListAsync();
+        
+        if (orders == null) return new List<Order?>();
+
+        return orders;     }
     
 }

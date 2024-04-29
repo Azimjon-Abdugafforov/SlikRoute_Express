@@ -185,5 +185,14 @@ public class OrderController : ControllerBase
         return new APIResponse(200, orders, "");
     }
 
+    [HttpGet("get-admin-archives", Name = "getAdminArchives")]
+
+    public async Task<APIResponse> gerAdminArchives()
+    {
+        var orders = await _orderService.getAdminArchives();
+        return new APIResponse(200, orders, "");
+    }
+    
+
     
 }

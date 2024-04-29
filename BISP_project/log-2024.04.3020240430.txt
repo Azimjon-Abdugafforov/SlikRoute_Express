@@ -1060,3 +1060,313 @@ System.NotSupportedException: Serialization and deserialization of 'System.Func`
 2024-04-30 01:56:51.430 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.SetOrderCost (BIS_project) in 3365.4256ms
 2024-04-30 01:56:51.431 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.SetOrderCost (BIS_project)'
 2024-04-30 01:56:51.431 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/set-cost/37?cost=141&distance=262 - 0 - 200 - application/json;+charset=utf-8 3368.2895ms
+2024-04-30 02:03:51.809 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-user-archives/?userName=raboyoc343@em2lab.com - -
+2024-04-30 02:03:51.815 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:03:51.816 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-user-archives/?userName=raboyoc343@em2lab.com - - - 204 - - 9.5589ms
+2024-04-30 02:03:51.825 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-user-archives/?userName=raboyoc343@em2lab.com - -
+2024-04-30 02:03:51.829 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:03:51.829 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.getUserArchives (BIS_project)'
+2024-04-30 02:03:51.831 +05:00 [INF] Route matched with {action = "getUserArchives", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] getUserArchives(System.String) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:03:57.117 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-30 02:03:57.119 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.getUserArchives (BIS_project) in 5287.738ms
+2024-04-30 02:03:57.119 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.getUserArchives (BIS_project)'
+2024-04-30 02:03:57.120 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-user-archives/?userName=raboyoc343@em2lab.com - - - 200 - application/json;+charset=utf-8 5295.6252ms
+2024-04-30 02:04:07.891 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - -
+2024-04-30 02:04:07.892 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:04:07.892 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - - - 204 - - 1.5636ms
+2024-04-30 02:04:07.898 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 37
+2024-04-30 02:04:07.899 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:04:07.900 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-30 02:04:07.902 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BIS_project.Dtos.UserDto) on controller BIS_project.Controllers.AuthController (BIS_project).
+2024-04-30 02:04:11.865 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[BIS_project.Models.User, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType0`8[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BIS_project.Models.Image, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-30 02:04:11.866 +05:00 [INF] Executed action BIS_project.Controllers.AuthController.Login (BIS_project) in 3963.827ms
+2024-04-30 02:04:11.866 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-30 02:04:11.866 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 37 - 200 - application/json;+charset=utf-8 3969.9338ms
+2024-04-30 02:04:11.927 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:04:11.928 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:04:11.928 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 0.6719ms
+2024-04-30 02:04:11.931 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:04:11.933 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:04:11.933 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:04:11.963 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:04:15.333 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:04:15.356 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 3392.2212ms
+2024-04-30 02:04:15.356 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:04:15.356 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 3424.7531ms
+2024-04-30 02:06:53.521 +05:00 [INF] Application is shutting down...
+2024-04-30 02:06:59.936 +05:00 [INF] User profile is available. Using '/Users/azizjonabdugafforov/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-04-30 02:07:00.022 +05:00 [INF] Now listening on: http://localhost:5279
+2024-04-30 02:07:00.023 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-30 02:07:00.023 +05:00 [INF] Hosting environment: Development
+2024-04-30 02:07:00.023 +05:00 [INF] Content root path: /Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project
+2024-04-30 02:07:01.985 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/index.html - -
+2024-04-30 02:07:02.093 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/index.html - - - 200 - text/html;charset=utf-8 108.9308ms
+2024-04-30 02:07:02.761 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui-bundle.js - -
+2024-04-30 02:07:02.809 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-30 02:07:02.811 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 49.7005ms
+2024-04-30 02:07:03.085 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - -
+2024-04-30 02:07:03.156 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.8440ms
+2024-04-30 02:09:39.260 +05:00 [INF] Application is shutting down...
+2024-04-30 02:09:43.843 +05:00 [INF] User profile is available. Using '/Users/azizjonabdugafforov/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-04-30 02:09:44.058 +05:00 [INF] Now listening on: http://localhost:5279
+2024-04-30 02:09:44.059 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-30 02:09:44.059 +05:00 [INF] Hosting environment: Development
+2024-04-30 02:09:44.059 +05:00 [INF] Content root path: /Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project
+2024-04-30 02:09:45.118 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/index.html - -
+2024-04-30 02:09:45.326 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/index.html - - - 200 - text/html;charset=utf-8 208.5905ms
+2024-04-30 02:09:46.229 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - -
+2024-04-30 02:09:46.361 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.5586ms
+2024-04-30 02:09:56.789 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:09:56.859 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-04-30 02:09:56.866 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:09:56.866 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 77.6835ms
+2024-04-30 02:09:56.867 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:09:57.029 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:09:57.030 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:09:57.045 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:10:08.163 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:10:08.216 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 11167.6837ms
+2024-04-30 02:10:08.218 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:10:08.227 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 11359.1160ms
+2024-04-30 02:17:07.345 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:17:07.365 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:17:07.367 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 23.3009ms
+2024-04-30 02:17:07.367 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:17:07.376 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:17:07.396 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:17:07.404 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:17:13.824 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:17:13.827 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 6421.5027ms
+2024-04-30 02:17:13.828 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:17:13.828 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 6459.4317ms
+2024-04-30 02:18:02.529 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:18:02.531 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:18:02.532 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 3.2041ms
+2024-04-30 02:18:02.533 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:18:02.535 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:18:02.535 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:18:02.544 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:18:05.749 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:18:05.752 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 3207.9059ms
+2024-04-30 02:18:05.752 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:18:05.753 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 3219.3610ms
+2024-04-30 02:18:28.090 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:18:28.092 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:18:28.093 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 3.1847ms
+2024-04-30 02:18:28.094 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:18:28.100 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:18:28.109 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:18:28.110 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:18:30.854 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:18:30.858 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 2747.637ms
+2024-04-30 02:18:30.858 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:18:30.859 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 2764.2652ms
+2024-04-30 02:19:06.937 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:19:06.940 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:19:06.942 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 4.2253ms
+2024-04-30 02:19:06.943 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:19:06.948 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:19:06.949 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:19:06.951 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:19:09.946 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:19:09.950 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 2998.1024ms
+2024-04-30 02:19:09.950 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:19:09.951 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 3008.1798ms
+2024-04-30 02:19:14.240 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:19:14.243 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:19:14.244 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 4.4903ms
+2024-04-30 02:19:14.244 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:19:14.247 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:19:14.247 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:19:14.250 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:19:17.215 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:19:17.218 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 2921.5181ms
+2024-04-30 02:19:17.219 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:19:17.219 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 2974.8877ms
+2024-04-30 02:19:53.105 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:19:53.107 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:19:53.107 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 3.0582ms
+2024-04-30 02:19:53.111 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:19:53.116 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:19:53.122 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:19:53.123 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:19:57.074 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:19:57.078 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 3954.9427ms
+2024-04-30 02:19:57.079 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:19:57.080 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 3968.8667ms
+2024-04-30 02:21:51.162 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:21:51.169 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:21:51.170 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 8.9631ms
+2024-04-30 02:21:51.174 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:21:51.178 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:21:51.224 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:21:51.228 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:21:54.248 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:21:54.250 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 3022.0621ms
+2024-04-30 02:21:54.250 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:21:54.251 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 3076.2277ms
+2024-04-30 02:21:54.443 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-admin-archives - -
+2024-04-30 02:21:54.444 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:21:54.444 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-admin-archives - - - 204 - - 1.4197ms
+2024-04-30 02:21:54.445 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-admin-archives - -
+2024-04-30 02:21:54.447 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:21:54.447 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project)'
+2024-04-30 02:21:54.460 +05:00 [INF] Route matched with {action = "gerAdminArchives", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] gerAdminArchives() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:21:57.000 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-30 02:21:57.005 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project) in 2544.8677ms
+2024-04-30 02:21:57.005 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project)'
+2024-04-30 02:21:57.005 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-admin-archives - - - 200 - application/json;+charset=utf-8 2560.0519ms
+2024-04-30 02:22:36.428 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-admin-archives - -
+2024-04-30 02:22:36.430 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:22:36.432 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-admin-archives - - - 204 - - 3.3981ms
+2024-04-30 02:22:36.442 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-admin-archives - -
+2024-04-30 02:22:36.454 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:22:36.454 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project)'
+2024-04-30 02:22:36.455 +05:00 [INF] Route matched with {action = "gerAdminArchives", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] gerAdminArchives() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:22:41.197 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-30 02:22:41.200 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project) in 4696.9262ms
+2024-04-30 02:22:41.200 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project)'
+2024-04-30 02:22:41.201 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-admin-archives - - - 200 - application/json;+charset=utf-8 4758.1537ms
+2024-04-30 02:25:05.986 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:25:05.994 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:25:05.995 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 9.3955ms
+2024-04-30 02:25:05.997 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:25:06.001 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:25:06.075 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:25:06.076 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:25:11.668 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:25:11.672 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 5596.0817ms
+2024-04-30 02:25:11.672 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:25:11.673 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 5676.0382ms
+2024-04-30 02:28:54.012 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - -
+2024-04-30 02:28:54.018 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:28:54.020 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - - - 204 - - 8.7972ms
+2024-04-30 02:28:54.027 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 37
+2024-04-30 02:28:54.028 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:28:54.031 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-30 02:28:54.072 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BIS_project.Dtos.UserDto) on controller BIS_project.Controllers.AuthController (BIS_project).
+2024-04-30 02:28:58.546 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[BIS_project.Models.User, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType0`8[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BIS_project.Models.Image, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-30 02:28:58.550 +05:00 [INF] Executed action BIS_project.Controllers.AuthController.Login (BIS_project) in 4477.2139ms
+2024-04-30 02:28:58.550 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-30 02:28:58.550 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 37 - 200 - application/json;+charset=utf-8 4523.7658ms
+2024-04-30 02:28:58.600 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:28:58.600 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:28:58.600 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 0.4867ms
+2024-04-30 02:28:58.606 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:28:58.607 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:28:58.607 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:28:58.608 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:29:01.702 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:29:01.706 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 3098.104ms
+2024-04-30 02:29:01.707 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:29:01.707 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 3100.8218ms
+2024-04-30 02:29:11.628 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-admin-archives - -
+2024-04-30 02:29:11.630 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:11.631 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-admin-archives - - - 204 - - 3.0864ms
+2024-04-30 02:29:11.633 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-admin-archives - -
+2024-04-30 02:29:11.635 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:11.635 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project)'
+2024-04-30 02:29:11.636 +05:00 [INF] Route matched with {action = "gerAdminArchives", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] gerAdminArchives() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:29:14.320 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-30 02:29:14.323 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project) in 2684.4365ms
+2024-04-30 02:29:14.324 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project)'
+2024-04-30 02:29:14.324 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-admin-archives - - - 200 - application/json;+charset=utf-8 2691.0716ms
+2024-04-30 02:29:37.270 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - -
+2024-04-30 02:29:37.287 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:37.288 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - - - 204 - - 18.1609ms
+2024-04-30 02:29:37.289 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 56
+2024-04-30 02:29:37.290 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:37.290 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-30 02:29:37.291 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BIS_project.Dtos.UserDto) on controller BIS_project.Controllers.AuthController (BIS_project).
+2024-04-30 02:29:39.860 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[BIS_project.Models.User, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType0`8[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BIS_project.Models.Image, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-30 02:29:39.864 +05:00 [INF] Executed action BIS_project.Controllers.AuthController.Login (BIS_project) in 2572.7067ms
+2024-04-30 02:29:39.864 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-30 02:29:39.865 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 56 - 200 - application/json;+charset=utf-8 2575.7120ms
+2024-04-30 02:29:40.086 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/by-user?username=raboyoc343%40em2lab.com - -
+2024-04-30 02:29:40.094 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:40.095 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/by-user?username=raboyoc343%40em2lab.com - - - 204 - - 8.8807ms
+2024-04-30 02:29:40.112 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/by-user?username=raboyoc343%40em2lab.com - -
+2024-04-30 02:29:40.116 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:40.116 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetOrderByClient (BIS_project)'
+2024-04-30 02:29:40.152 +05:00 [INF] Route matched with {action = "GetOrderByClient", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderByClient(System.String) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:29:42.823 +05:00 [INF] Executing OkObjectResult, writing value of type 'BIS_project.Models.Order'.
+2024-04-30 02:29:42.824 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetOrderByClient (BIS_project) in 2671.9704ms
+2024-04-30 02:29:42.824 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetOrderByClient (BIS_project)'
+2024-04-30 02:29:42.824 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/by-user?username=raboyoc343%40em2lab.com - - - 200 - application/json;+charset=utf-8 2711.8345ms
+2024-04-30 02:29:42.831 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/set-cost/37?cost=141&distance=262 - -
+2024-04-30 02:29:42.831 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:42.832 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/set-cost/37?cost=141&distance=262 - - - 204 - - 0.5192ms
+2024-04-30 02:29:42.832 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/set-cost/37?cost=141&distance=262 - 0
+2024-04-30 02:29:42.833 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:42.833 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.SetOrderCost (BIS_project)'
+2024-04-30 02:29:42.838 +05:00 [INF] Route matched with {action = "SetOrderCost", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] SetOrderCost(Int32, Int32, Single) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:29:46.753 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-30 02:29:46.757 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.SetOrderCost (BIS_project) in 3919.0068ms
+2024-04-30 02:29:46.757 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.SetOrderCost (BIS_project)'
+2024-04-30 02:29:46.757 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/set-cost/37?cost=141&distance=262 - 0 - 200 - application/json;+charset=utf-8 3925.2424ms
+2024-04-30 02:29:48.487 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-user-archives/?userName=raboyoc343@em2lab.com - -
+2024-04-30 02:29:48.490 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:48.490 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-user-archives/?userName=raboyoc343@em2lab.com - - - 204 - - 4.1403ms
+2024-04-30 02:29:48.492 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-user-archives/?userName=raboyoc343@em2lab.com - -
+2024-04-30 02:29:48.531 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:29:48.531 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.getUserArchives (BIS_project)'
+2024-04-30 02:29:48.539 +05:00 [INF] Route matched with {action = "getUserArchives", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] getUserArchives(System.String) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:29:51.051 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-30 02:29:51.053 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.getUserArchives (BIS_project) in 2513.4945ms
+2024-04-30 02:29:51.053 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.getUserArchives (BIS_project)'
+2024-04-30 02:29:51.053 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-user-archives/?userName=raboyoc343@em2lab.com - - - 200 - application/json;+charset=utf-8 2560.9937ms
+2024-04-30 02:33:03.951 +05:00 [INF] Application is shutting down...
+2024-04-30 02:33:08.926 +05:00 [INF] User profile is available. Using '/Users/azizjonabdugafforov/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-04-30 02:33:08.987 +05:00 [INF] Now listening on: http://localhost:5279
+2024-04-30 02:33:08.987 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-30 02:33:08.987 +05:00 [INF] Hosting environment: Development
+2024-04-30 02:33:08.987 +05:00 [INF] Content root path: /Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project
+2024-04-30 02:33:09.834 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/index.html - -
+2024-04-30 02:33:09.945 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/index.html - - - 200 - text/html;charset=utf-8 110.7930ms
+2024-04-30 02:33:10.593 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - -
+2024-04-30 02:33:10.695 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 102.1752ms
+2024-04-30 02:35:10.809 +05:00 [INF] Application is shutting down...
+2024-04-30 02:35:14.319 +05:00 [INF] User profile is available. Using '/Users/azizjonabdugafforov/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-04-30 02:35:14.381 +05:00 [INF] Now listening on: http://localhost:5279
+2024-04-30 02:35:14.382 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-30 02:35:14.382 +05:00 [INF] Hosting environment: Development
+2024-04-30 02:35:14.382 +05:00 [INF] Content root path: /Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project
+2024-04-30 02:35:14.718 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/index.html - -
+2024-04-30 02:35:14.801 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/index.html - - - 200 - text/html;charset=utf-8 84.6695ms
+2024-04-30 02:35:15.030 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - -
+2024-04-30 02:35:15.135 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.1402ms
+2024-04-30 02:49:49.449 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - -
+2024-04-30 02:49:49.536 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-04-30 02:49:49.542 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:49:49.544 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - - - 204 - - 100.6261ms
+2024-04-30 02:49:49.546 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 37
+2024-04-30 02:49:49.555 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:49:49.558 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-30 02:49:49.586 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BIS_project.Dtos.UserDto) on controller BIS_project.Controllers.AuthController (BIS_project).
+2024-04-30 02:49:58.995 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[BIS_project.Models.User, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType0`8[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BIS_project.Models.Image, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-30 02:49:59.004 +05:00 [INF] Executed action BIS_project.Controllers.AuthController.Login (BIS_project) in 9406.3852ms
+2024-04-30 02:49:59.006 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-30 02:49:59.014 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 37 - 200 - application/json;+charset=utf-8 9467.1312ms
+2024-04-30 02:49:59.045 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:49:59.049 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:49:59.050 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 4.3310ms
+2024-04-30 02:49:59.051 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-30 02:49:59.117 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:49:59.118 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:49:59.121 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:50:02.219 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-30 02:50:02.285 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 3163.1815ms
+2024-04-30 02:50:02.285 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-30 02:50:02.285 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 3234.0639ms
+2024-04-30 02:50:14.333 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-admin-archives - -
+2024-04-30 02:50:14.344 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:50:14.346 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-admin-archives - - - 204 - - 12.3580ms
+2024-04-30 02:50:14.352 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-admin-archives - -
+2024-04-30 02:50:14.356 +05:00 [INF] CORS policy execution successful.
+2024-04-30 02:50:14.356 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project)'
+2024-04-30 02:50:14.363 +05:00 [INF] Route matched with {action = "gerAdminArchives", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] gerAdminArchives() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-30 02:50:18.191 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-30 02:50:18.218 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project) in 3854.6444ms
+2024-04-30 02:50:18.218 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.gerAdminArchives (BIS_project)'
+2024-04-30 02:50:18.218 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-admin-archives - - - 200 - application/json;+charset=utf-8 3866.0894ms
+2024-04-30 02:50:38.339 +05:00 [INF] Application is shutting down...
