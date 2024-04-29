@@ -77,5 +77,12 @@ public class DriverController : ControllerBase
     {
         return await _driverService.GetDrivers();
     }
-    
+
+    [HttpGet("get-driver-archives", Name = "getDriverArchives")]
+    public async Task<APIResponse> getDriverArchiveOrders(string userName)
+    {
+        var orders = await _driverService.driverArchives(userName);
+        return new APIResponse(200,  orders, "");
+    }
+     
 }

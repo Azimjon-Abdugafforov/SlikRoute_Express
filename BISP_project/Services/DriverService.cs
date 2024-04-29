@@ -75,6 +75,7 @@ public class DriverService : IDriverService
                 LicensePhoto = license,
                 PhoneNumber = driver.PhoneNumber, 
             };
+            
             await _dataContext.Drivers.AddAsync(d);
             await _dataContext.SaveChangesAsync();
             var user = new UserRegisterDto()
@@ -83,7 +84,8 @@ public class DriverService : IDriverService
                 Password = GenerateRandomPassword(),
                 Username = driver.Email,
             };
-            await _authService.DriverRegister(user);
+            var registered = await _authService.DriverRegister(user);
+
             return true;
         }
         catch (Exception e)
@@ -119,6 +121,24 @@ public class DriverService : IDriverService
             Console.WriteLine(e);
             throw;
         }
+    }
+
+    public async Task<List<Order?>> driverArchives(string username)
+    {
+        List<Order> orders = await _dataContext.Orders.Where(e => e.Status == "FINISHED" && e.Driver.Email == username)
+            .Include(e => e.ProductImages)
+            .Include(e => e.FromDistrict)
+            .Include(e => e.FromRegion)
+            .Include(e => e.ToRegion)
+            .Include(e => e.ToDistrict)
+            .Include(e => e.Client)
+            .Include(e => e.Driver.Truck)
+            .Include(e => e.EndImage)
+            .ToListAsync();
+        
+        if (orders == null) return new List<Order?>();
+
+        return orders;
     }
 
     public Task<APIResponse> DeleteDriver(int id)

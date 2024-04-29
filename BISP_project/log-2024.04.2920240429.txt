@@ -2090,3 +2090,512 @@ System.TimeoutException: The operation has timed out.
 2024-04-29 15:07:33.230 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - -
 2024-04-29 15:07:33.242 +05:00 [INF] The file /Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg was not modified
 2024-04-29 15:07:33.243 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - - - 304 - image/jpeg 12.7323ms
+2024-04-29 15:17:22.169 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/bc2c0f19-24c7-4ded-865e-5ac259e805e7.jpg - -
+2024-04-29 15:17:22.215 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/bc2c0f19-24c7-4ded-865e-5ac259e805e7.jpg - - - 404 0 - 50.9715ms
+2024-04-29 16:43:51.207 +05:00 [INF] User profile is available. Using '/Users/azizjonabdugafforov/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-04-29 16:43:51.762 +05:00 [INF] Now listening on: http://localhost:5279
+2024-04-29 16:43:51.764 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 16:43:51.764 +05:00 [INF] Hosting environment: Development
+2024-04-29 16:43:51.764 +05:00 [INF] Content root path: /Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project
+2024-04-29 16:43:56.683 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/index.html - -
+2024-04-29 16:43:56.781 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/index.html - - - 200 - text/html;charset=utf-8 99.2475ms
+2024-04-29 16:43:56.799 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui-bundle.js - -
+2024-04-29 16:43:56.984 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-29 16:43:56.987 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 187.8522ms
+2024-04-29 16:43:57.134 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - -
+2024-04-29 16:43:57.345 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 211.1077ms
+2024-04-29 18:08:38.597 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - -
+2024-04-29 18:08:38.794 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-04-29 18:08:38.802 +05:00 [INF] CORS policy execution successful.
+2024-04-29 18:08:38.805 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - - - 204 - - 211.8436ms
+2024-04-29 18:08:38.807 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 37
+2024-04-29 18:08:38.859 +05:00 [INF] CORS policy execution successful.
+2024-04-29 18:08:38.862 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-29 18:08:38.891 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BIS_project.Dtos.UserDto) on controller BIS_project.Controllers.AuthController (BIS_project).
+2024-04-29 18:08:46.145 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[BIS_project.Models.User, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType0`8[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BIS_project.Models.Image, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-29 18:08:46.155 +05:00 [INF] Executed action BIS_project.Controllers.AuthController.Login (BIS_project) in 7260.8821ms
+2024-04-29 18:08:46.159 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-29 18:08:46.166 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 37 - 200 - application/json;+charset=utf-8 7358.8749ms
+2024-04-29 18:08:46.228 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-29 18:08:46.247 +05:00 [INF] CORS policy execution successful.
+2024-04-29 18:08:46.248 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 20.3533ms
+2024-04-29 18:08:46.249 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-29 18:08:46.302 +05:00 [INF] CORS policy execution successful.
+2024-04-29 18:08:46.303 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-29 18:08:46.305 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 18:08:48.984 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 18:08:49.038 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 2724.4977ms
+2024-04-29 18:08:49.038 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-29 18:08:49.038 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 2788.9175ms
+2024-04-29 23:21:02.363 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-29 23:21:02.381 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:21:02.410 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 25.4925ms
+2024-04-29 23:21:02.437 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-29 23:21:02.467 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:21:02.468 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-29 23:21:02.476 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:21:08.119 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:21:08.128 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 5651.3499ms
+2024-04-29 23:21:08.128 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-29 23:21:08.129 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 5691.6362ms
+2024-04-29 23:25:35.202 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - -
+2024-04-29 23:25:35.326 +05:00 [INF] The file /Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg was not modified
+2024-04-29 23:25:35.327 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - - - 304 - image/jpeg 180.8648ms
+2024-04-29 23:27:52.060 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-29 23:27:52.063 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:27:52.063 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/get-all - - - 204 - - 39.5007ms
+2024-04-29 23:27:52.089 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - -
+2024-04-29 23:27:52.092 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:27:52.093 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-29 23:27:52.095 +05:00 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Order]] GetAllOrders() on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:27:56.752 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Order, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:27:56.756 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetAllOrders (BIS_project) in 4649.3222ms
+2024-04-29 23:27:56.757 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetAllOrders (BIS_project)'
+2024-04-29 23:27:56.758 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/get-all - - - 200 - application/json;+charset=utf-8 4668.1488ms
+2024-04-29 23:28:55.337 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - -
+2024-04-29 23:28:55.390 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - - - 404 0 - 52.7070ms
+2024-04-29 23:29:29.991 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - -
+2024-04-29 23:29:29.993 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:29:30.045 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:29:30.046 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 53.3354ms
+2024-04-29 23:29:30.047 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:29:30.053 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - - - 404 0 - 89.2974ms
+2024-04-29 23:29:30.067 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:29:30.096 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:29:30.134 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:29:32.907 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:29:32.924 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2789.9841ms
+2024-04-29 23:29:32.925 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:29:32.925 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2878.3445ms
+2024-04-29 23:29:34.577 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:29:34.580 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:29:34.581 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:29:34.581 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:29:37.081 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:29:37.083 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2490.3723ms
+2024-04-29 23:29:37.083 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:29:37.084 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2510.8608ms
+2024-04-29 23:29:37.123 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - -
+2024-04-29 23:29:37.124 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - - - 404 0 - 0.6801ms
+2024-04-29 23:29:44.269 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:29:44.273 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:29:44.274 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 5.4842ms
+2024-04-29 23:29:44.275 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:29:44.287 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:29:44.287 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:29:44.288 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:29:46.913 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:29:46.915 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2626.6381ms
+2024-04-29 23:29:46.915 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:29:46.916 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2641.0611ms
+2024-04-29 23:29:46.954 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - -
+2024-04-29 23:29:46.955 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - - - 404 0 - 0.6440ms
+2024-04-29 23:30:06.134 +05:00 [INF] User profile is available. Using '/Users/azizjonabdugafforov/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-04-29 23:30:06.219 +05:00 [INF] Now listening on: http://localhost:5279
+2024-04-29 23:30:06.220 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 23:30:06.220 +05:00 [INF] Hosting environment: Development
+2024-04-29 23:30:06.220 +05:00 [INF] Content root path: /Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project
+2024-04-29 23:30:06.770 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/index.html - -
+2024-04-29 23:30:06.904 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/index.html - - - 200 - text/html;charset=utf-8 135.3672ms
+2024-04-29 23:30:06.946 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui-bundle.js - -
+2024-04-29 23:30:06.946 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui-standalone-preset.js - -
+2024-04-29 23:30:06.950 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui.css - -
+2024-04-29 23:30:07.309 +05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-04-29 23:30:07.309 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-04-29 23:30:07.311 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui.css - - - 200 144929 text/css 360.8191ms
+2024-04-29 23:30:07.311 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 364.5189ms
+2024-04-29 23:30:07.316 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-29 23:30:07.316 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 370.3833ms
+2024-04-29 23:30:07.419 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - -
+2024-04-29 23:30:07.510 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.3562ms
+2024-04-29 23:30:10.355 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:30:10.454 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-04-29 23:30:10.455 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:30:10.456 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 101.5647ms
+2024-04-29 23:30:10.457 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:30:10.564 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:30:10.566 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:30:10.578 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:30:17.299 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:30:17.366 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 6784.8445ms
+2024-04-29 23:30:17.370 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:30:17.402 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - -
+2024-04-29 23:30:17.402 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 6945.1091ms
+2024-04-29 23:30:17.413 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - - - 404 0 - 11.0871ms
+2024-04-29 23:30:27.637 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/start-ship/?id=39 - -
+2024-04-29 23:30:27.679 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:30:27.680 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/start-ship/?id=39 - - - 204 - - 45.2005ms
+2024-04-29 23:30:27.681 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/start-ship/?id=39 - 0
+2024-04-29 23:30:27.685 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:30:27.685 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.StartShipDriver (BIS_project)'
+2024-04-29 23:30:27.690 +05:00 [INF] Route matched with {action = "StartShipDriver", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartShipDriver(Int32) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:31:04.624 +05:00 [INF] User profile is available. Using '/Users/azizjonabdugafforov/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-04-29 23:31:04.673 +05:00 [INF] Now listening on: http://localhost:5279
+2024-04-29 23:31:04.674 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 23:31:04.674 +05:00 [INF] Hosting environment: Development
+2024-04-29 23:31:04.674 +05:00 [INF] Content root path: /Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project
+2024-04-29 23:31:05.303 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/index.html - -
+2024-04-29 23:31:05.425 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/index.html - - - 200 - text/html;charset=utf-8 123.5957ms
+2024-04-29 23:31:05.753 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - -
+2024-04-29 23:31:05.844 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.1652ms
+2024-04-29 23:31:10.151 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:31:10.211 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-04-29 23:31:10.213 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:31:10.215 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 64.2247ms
+2024-04-29 23:31:10.216 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:31:10.295 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:31:10.297 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:31:10.307 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:31:17.587 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:31:17.639 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 7329.6923ms
+2024-04-29 23:31:17.642 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:31:17.649 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 7432.9932ms
+2024-04-29 23:31:17.668 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - -
+2024-04-29 23:31:17.670 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - - - 404 0 - 2.5824ms
+2024-04-29 23:32:28.356 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:32:28.374 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:32:28.375 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 19.1472ms
+2024-04-29 23:32:28.376 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:32:28.379 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:32:28.380 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:32:28.380 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:32:31.182 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:32:31.184 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2803.7197ms
+2024-04-29 23:32:31.184 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:32:31.184 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2808.5178ms
+2024-04-29 23:33:36.134 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - -
+2024-04-29 23:33:36.141 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - - - 404 0 - 7.6586ms
+2024-04-29 23:33:40.003 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - -
+2024-04-29 23:33:40.007 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/8495ea4f-56f0-4b5d-afb7-e83fc11fc0b3.jpeg - - - 404 0 - 3.7278ms
+2024-04-29 23:35:16.117 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:35:16.122 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:35:16.123 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 5.6160ms
+2024-04-29 23:35:16.124 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:35:16.128 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:35:16.129 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:35:16.133 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:35:18.678 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:35:18.680 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:35:18.680 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:35:18.680 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:35:18.938 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:35:18.947 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2814.1648ms
+2024-04-29 23:35:18.947 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:35:18.947 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 0 - application/json;+charset=utf-8 2823.2347ms
+2024-04-29 23:35:20.806 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:35:20.807 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2126.3156ms
+2024-04-29 23:35:20.807 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:35:20.807 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2128.9832ms
+2024-04-29 23:35:57.688 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:35:57.691 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:35:57.691 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 2.9851ms
+2024-04-29 23:35:57.693 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:35:57.696 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:35:57.697 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:35:57.697 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:35:59.917 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:35:59.919 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2219.4647ms
+2024-04-29 23:35:59.919 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:35:59.919 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2225.7696ms
+2024-04-29 23:36:44.285 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/start-ship/?id=39 - -
+2024-04-29 23:36:44.310 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:36:44.314 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/start-ship/?id=39 - - - 204 - - 28.3915ms
+2024-04-29 23:36:44.315 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/start-ship/?id=39 - 0
+2024-04-29 23:36:44.321 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:36:44.322 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.StartShipDriver (BIS_project)'
+2024-04-29 23:36:44.332 +05:00 [INF] Route matched with {action = "StartShipDriver", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartShipDriver(Int32) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:36:53.130 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-04-29 23:36:53.131 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.StartShipDriver (BIS_project) in 8799.7539ms
+2024-04-29 23:36:53.132 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.StartShipDriver (BIS_project)'
+2024-04-29 23:36:53.132 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/start-ship/?id=39 - 0 - 200 - application/json;+charset=utf-8 8816.7962ms
+2024-04-29 23:36:53.137 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:36:53.138 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:36:53.138 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 1.0659ms
+2024-04-29 23:36:53.139 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:36:53.141 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:36:53.142 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:36:53.142 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:36:55.961 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:36:55.967 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2819.336ms
+2024-04-29 23:36:55.968 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:36:55.969 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2828.9575ms
+2024-04-29 23:38:01.660 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/finish-ship/?id=39 - -
+2024-04-29 23:38:01.690 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:38:01.693 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/finish-ship/?id=39 - - - 204 - - 33.2900ms
+2024-04-29 23:38:01.697 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/finish-ship/?id=39 - 0
+2024-04-29 23:38:01.702 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:38:01.702 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.FinishShip (BIS_project)'
+2024-04-29 23:38:01.717 +05:00 [INF] Route matched with {action = "FinishShip", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FinishShip(Int32) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:38:08.265 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-04-29 23:38:08.267 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.FinishShip (BIS_project) in 6549.9903ms
+2024-04-29 23:38:08.268 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.FinishShip (BIS_project)'
+2024-04-29 23:38:08.268 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/finish-ship/?id=39 - 0 - 200 - application/json;+charset=utf-8 6570.7198ms
+2024-04-29 23:38:08.273 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:38:08.274 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:38:08.274 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 0.8956ms
+2024-04-29 23:38:08.276 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:38:08.288 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:38:08.288 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:38:08.288 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:38:10.503 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:38:10.504 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2215.1159ms
+2024-04-29 23:38:10.504 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:38:10.505 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2228.4547ms
+2024-04-29 23:39:30.561 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - -
+2024-04-29 23:39:30.589 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:39:30.591 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - - - 204 - - 29.9717ms
+2024-04-29 23:39:30.593 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 57
+2024-04-29 23:39:30.593 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:39:30.593 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-29 23:39:30.602 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BIS_project.Dtos.UserDto) on controller BIS_project.Controllers.AuthController (BIS_project).
+2024-04-29 23:39:33.632 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[BIS_project.Models.User, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType0`8[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BIS_project.Models.Image, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-29 23:39:33.636 +05:00 [INF] Executed action BIS_project.Controllers.AuthController.Login (BIS_project) in 3034.4575ms
+2024-04-29 23:39:33.636 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-29 23:39:33.636 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 57 - 200 - application/json;+charset=utf-8 3043.8869ms
+2024-04-29 23:39:33.679 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/by-user?username=jagibi5158%40buzblox.com - -
+2024-04-29 23:39:33.679 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:39:33.679 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/by-user?username=jagibi5158%40buzblox.com - - - 204 - - 0.6748ms
+2024-04-29 23:39:33.693 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/by-user?username=jagibi5158%40buzblox.com - -
+2024-04-29 23:39:33.700 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:39:33.700 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetOrderByClient (BIS_project)'
+2024-04-29 23:39:33.704 +05:00 [INF] Route matched with {action = "GetOrderByClient", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderByClient(System.String) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:39:36.416 +05:00 [INF] Executing OkObjectResult, writing value of type 'BIS_project.Models.Order'.
+2024-04-29 23:39:36.416 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetOrderByClient (BIS_project) in 2712.459ms
+2024-04-29 23:39:36.416 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetOrderByClient (BIS_project)'
+2024-04-29 23:39:36.417 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/by-user?username=jagibi5158%40buzblox.com - - - 200 - application/json;+charset=utf-8 2723.6542ms
+2024-04-29 23:39:36.421 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/set-cost/39?cost=141&distance=271 - -
+2024-04-29 23:39:36.422 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:39:36.422 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/set-cost/39?cost=141&distance=271 - - - 204 - - 0.4913ms
+2024-04-29 23:39:36.423 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/set-cost/39?cost=141&distance=271 - 0
+2024-04-29 23:39:36.424 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:39:36.424 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.SetOrderCost (BIS_project)'
+2024-04-29 23:39:36.426 +05:00 [INF] Route matched with {action = "SetOrderCost", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] SetOrderCost(Int32, Int32, Single) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:39:39.144 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:39:39.146 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.SetOrderCost (BIS_project) in 2720.0484ms
+2024-04-29 23:39:39.146 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.SetOrderCost (BIS_project)'
+2024-04-29 23:39:39.147 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/set-cost/39?cost=141&distance=271 - 0 - 200 - application/json;+charset=utf-8 2723.9107ms
+2024-04-29 23:41:39.687 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/by-user?username=jagibi5158%40buzblox.com - -
+2024-04-29 23:41:39.691 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:41:39.691 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/by-user?username=jagibi5158%40buzblox.com - - - 204 - - 4.8862ms
+2024-04-29 23:41:39.692 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/base-order/by-user?username=jagibi5158%40buzblox.com - -
+2024-04-29 23:41:39.695 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:41:39.696 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.GetOrderByClient (BIS_project)'
+2024-04-29 23:41:39.700 +05:00 [INF] Route matched with {action = "GetOrderByClient", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderByClient(System.String) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:41:42.445 +05:00 [INF] Executing OkObjectResult, writing value of type 'BIS_project.Models.Order'.
+2024-04-29 23:41:42.447 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.GetOrderByClient (BIS_project) in 2746.001ms
+2024-04-29 23:41:42.447 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.GetOrderByClient (BIS_project)'
+2024-04-29 23:41:42.447 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/base-order/by-user?username=jagibi5158%40buzblox.com - - - 200 - application/json;+charset=utf-8 2755.4834ms
+2024-04-29 23:41:42.460 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/set-cost/39?cost=141&distance=271 - -
+2024-04-29 23:41:42.461 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:41:42.461 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/set-cost/39?cost=141&distance=271 - - - 204 - - 0.8250ms
+2024-04-29 23:41:42.462 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/set-cost/39?cost=141&distance=271 - 0
+2024-04-29 23:41:42.464 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:41:42.464 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.SetOrderCost (BIS_project)'
+2024-04-29 23:41:42.465 +05:00 [INF] Route matched with {action = "SetOrderCost", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] SetOrderCost(Int32, Int32, Single) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:41:45.440 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:41:45.441 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.SetOrderCost (BIS_project) in 2976.2877ms
+2024-04-29 23:41:45.441 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.SetOrderCost (BIS_project)'
+2024-04-29 23:41:45.442 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/set-cost/39?cost=141&distance=271 - 0 - 200 - application/json;+charset=utf-8 2979.0098ms
+2024-04-29 23:42:04.962 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - -
+2024-04-29 23:42:04.966 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:42:04.966 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - - - 204 - - 4.3512ms
+2024-04-29 23:42:04.967 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 63
+2024-04-29 23:42:04.968 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:42:04.969 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-29 23:42:04.970 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BIS_project.Dtos.UserDto) on controller BIS_project.Controllers.AuthController (BIS_project).
+2024-04-29 23:42:10.510 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[BIS_project.Models.User, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType0`8[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BIS_project.Models.Image, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-29 23:42:10.514 +05:00 [INF] Executed action BIS_project.Controllers.AuthController.Login (BIS_project) in 5544.0637ms
+2024-04-29 23:42:10.514 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-29 23:42:10.515 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 63 - 200 - application/json;+charset=utf-8 5547.3223ms
+2024-04-29 23:42:10.581 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:42:10.583 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:42:10.583 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 3.4803ms
+2024-04-29 23:42:10.587 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:42:10.588 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:42:10.588 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:42:10.589 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:42:12.987 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:42:12.990 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2400.9047ms
+2024-04-29 23:42:12.990 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:42:12.991 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2403.9265ms
+2024-04-29 23:42:18.124 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/finish-ship/?id=39 - -
+2024-04-29 23:42:18.125 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:42:18.125 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/base-order/finish-ship/?id=39 - - - 204 - - 1.5758ms
+2024-04-29 23:42:18.126 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/finish-ship/?id=39 - 0
+2024-04-29 23:42:18.127 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:42:18.128 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.FinishShip (BIS_project)'
+2024-04-29 23:42:18.129 +05:00 [INF] Route matched with {action = "FinishShip", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FinishShip(Int32) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 23:42:25.413 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-04-29 23:42:25.416 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.FinishShip (BIS_project) in 7286.7292ms
+2024-04-29 23:42:25.416 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.FinishShip (BIS_project)'
+2024-04-29 23:42:25.416 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/finish-ship/?id=39 - 0 - 200 - application/json;+charset=utf-8 7290.1037ms
+2024-04-29 23:42:25.431 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:42:25.432 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:42:25.432 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 1.4008ms
+2024-04-29 23:42:25.433 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:42:25.434 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:42:25.434 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:42:25.435 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:42:28.218 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:42:28.219 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2784.2324ms
+2024-04-29 23:42:28.219 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:42:28.220 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2786.7206ms
+2024-04-29 23:44:39.630 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:44:39.633 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:44:39.634 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 3.5926ms
+2024-04-29 23:44:39.635 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:44:39.637 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:44:39.660 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:44:39.661 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:44:42.458 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:44:42.461 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 2800.0587ms
+2024-04-29 23:44:42.462 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:44:42.463 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 2828.1027ms
+2024-04-29 23:48:56.202 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - -
+2024-04-29 23:48:56.217 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:48:56.218 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:48:56.255 +05:00 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Branch]] GetAllAsync() on controller BIS_project.Controllers.BranchController (BIS_project).
+2024-04-29 23:49:01.994 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Branch, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:49:02.006 +05:00 [INF] Executed action BIS_project.Controllers.BranchController.GetAllAsync (BIS_project) in 5725.8355ms
+2024-04-29 23:49:02.006 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:49:02.006 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - - - 200 - application/json;+charset=utf-8 5807.0537ms
+2024-04-29 23:49:35.549 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/driver multipart/form-data;+boundary=----WebKitFormBoundaryINbzSUpzP4EHzi9b 78106
+2024-04-29 23:49:35.554 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:49:35.554 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.CreateDriver (BIS_project)'
+2024-04-29 23:49:35.585 +05:00 [INF] Route matched with {action = "CreateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] CreateDriver(BIS_project.Request.DriverModel) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:49:36.672 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/driver multipart/form-data;+boundary=----WebKitFormBoundaryp6A4wgWuIAcMSiYL 78106
+2024-04-29 23:49:36.673 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:49:36.673 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.CreateDriver (BIS_project)'
+2024-04-29 23:49:36.674 +05:00 [INF] Route matched with {action = "CreateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] CreateDriver(BIS_project.Request.DriverModel) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:49:39.199 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-29 23:49:39.204 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.CreateDriver (BIS_project) in 3619.5362ms
+2024-04-29 23:49:39.205 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.CreateDriver (BIS_project)'
+2024-04-29 23:49:39.205 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/driver multipart/form-data;+boundary=----WebKitFormBoundaryINbzSUpzP4EHzi9b 78106 - 400 - application/problem+json;+charset=utf-8 3656.3535ms
+2024-04-29 23:49:41.608 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-29 23:49:41.610 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.CreateDriver (BIS_project) in 4936.128ms
+2024-04-29 23:49:41.611 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.CreateDriver (BIS_project)'
+2024-04-29 23:49:41.611 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/driver multipart/form-data;+boundary=----WebKitFormBoundaryp6A4wgWuIAcMSiYL 78106 - 400 - application/problem+json;+charset=utf-8 4938.9685ms
+2024-04-29 23:50:01.543 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - -
+2024-04-29 23:50:01.552 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:50:01.552 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:50:01.553 +05:00 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Branch]] GetAllAsync() on controller BIS_project.Controllers.BranchController (BIS_project).
+2024-04-29 23:50:04.534 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Branch, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:50:04.535 +05:00 [INF] Executed action BIS_project.Controllers.BranchController.GetAllAsync (BIS_project) in 2982.0455ms
+2024-04-29 23:50:04.535 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:50:04.535 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - - - 200 - application/json;+charset=utf-8 2992.3782ms
+2024-04-29 23:50:04.537 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - -
+2024-04-29 23:50:04.537 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:50:04.538 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:50:04.538 +05:00 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Branch]] GetAllAsync() on controller BIS_project.Controllers.BranchController (BIS_project).
+2024-04-29 23:50:07.185 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Branch, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:50:07.186 +05:00 [INF] Executed action BIS_project.Controllers.BranchController.GetAllAsync (BIS_project) in 2647.7149ms
+2024-04-29 23:50:07.187 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:50:07.187 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - - - 200 - application/json;+charset=utf-8 2649.9915ms
+2024-04-29 23:51:11.902 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - -
+2024-04-29 23:51:11.906 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:51:11.907 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:51:11.911 +05:00 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Branch]] GetAllAsync() on controller BIS_project.Controllers.BranchController (BIS_project).
+2024-04-29 23:51:15.732 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Branch, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:51:15.736 +05:00 [INF] Executed action BIS_project.Controllers.BranchController.GetAllAsync (BIS_project) in 3824.9245ms
+2024-04-29 23:51:15.737 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:51:15.737 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - - - 200 - application/json;+charset=utf-8 3835.6077ms
+2024-04-29 23:52:32.424 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/driver multipart/form-data;+boundary=----WebKitFormBoundaryCAbQqa0ZG6DjGd1R 82104
+2024-04-29 23:52:32.426 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:52:32.426 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.CreateDriver (BIS_project)'
+2024-04-29 23:52:32.429 +05:00 [INF] Route matched with {action = "CreateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] CreateDriver(BIS_project.Request.DriverModel) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:52:42.261 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/driver multipart/form-data;+boundary=----WebKitFormBoundaryPksi6CusqJY5SOEL 82104
+2024-04-29 23:52:42.262 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:52:42.262 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.CreateDriver (BIS_project)'
+2024-04-29 23:52:42.263 +05:00 [INF] Route matched with {action = "CreateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] CreateDriver(BIS_project.Request.DriverModel) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:52:43.634 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:52:43.636 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.CreateDriver (BIS_project) in 11207.0173ms
+2024-04-29 23:52:43.636 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.CreateDriver (BIS_project)'
+2024-04-29 23:52:43.636 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/driver multipart/form-data;+boundary=----WebKitFormBoundaryCAbQqa0ZG6DjGd1R 82104 - 200 - application/json;+charset=utf-8 11213.6622ms
+2024-04-29 23:52:48.797 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:52:48.798 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.CreateDriver (BIS_project) in 6531.0205ms
+2024-04-29 23:52:48.798 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.CreateDriver (BIS_project)'
+2024-04-29 23:52:48.799 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/driver multipart/form-data;+boundary=----WebKitFormBoundaryPksi6CusqJY5SOEL 82104 - 200 - application/json;+charset=utf-8 6537.6642ms
+2024-04-29 23:53:21.306 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - -
+2024-04-29 23:53:21.312 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:53:21.313 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:53:21.323 +05:00 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Branch]] GetAllAsync() on controller BIS_project.Controllers.BranchController (BIS_project).
+2024-04-29 23:53:22.994 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - -
+2024-04-29 23:53:22.994 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:53:22.995 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:53:22.995 +05:00 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Branch]] GetAllAsync() on controller BIS_project.Controllers.BranchController (BIS_project).
+2024-04-29 23:53:24.005 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Branch, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:53:24.014 +05:00 [INF] Executed action BIS_project.Controllers.BranchController.GetAllAsync (BIS_project) in 2690.6412ms
+2024-04-29 23:53:24.014 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:53:24.014 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - - - 0 - application/json;+charset=utf-8 2708.9751ms
+2024-04-29 23:53:27.198 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Branch, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:53:27.200 +05:00 [INF] Executed action BIS_project.Controllers.BranchController.GetAllAsync (BIS_project) in 4204.3525ms
+2024-04-29 23:53:27.200 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:53:27.200 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - - - 200 - application/json;+charset=utf-8 4206.4287ms
+2024-04-29 23:53:59.810 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - -
+2024-04-29 23:53:59.819 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:53:59.820 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:53:59.824 +05:00 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Branch]] GetAllAsync() on controller BIS_project.Controllers.BranchController (BIS_project).
+2024-04-29 23:54:04.255 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - -
+2024-04-29 23:54:04.269 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:54:04.270 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:54:04.271 +05:00 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Branch]] GetAllAsync() on controller BIS_project.Controllers.BranchController (BIS_project).
+2024-04-29 23:54:05.474 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Branch, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:54:05.477 +05:00 [INF] Executed action BIS_project.Controllers.BranchController.GetAllAsync (BIS_project) in 5642.878ms
+2024-04-29 23:54:05.477 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:54:05.477 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - - - 0 - application/json;+charset=utf-8 5667.3508ms
+2024-04-29 23:54:06.902 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Branch, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:54:06.903 +05:00 [INF] Executed action BIS_project.Controllers.BranchController.GetAllAsync (BIS_project) in 2631.6627ms
+2024-04-29 23:54:06.904 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.BranchController.GetAllAsync (BIS_project)'
+2024-04-29 23:54:06.904 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/branch/getAll - - - 200 - application/json;+charset=utf-8 2648.7213ms
+2024-04-29 23:56:14.511 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/region/getAll - -
+2024-04-29 23:56:14.518 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:56:14.519 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.RegionController.GetAllAsync (BIS_project)'
+2024-04-29 23:56:14.547 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Region]] GetAllAsync() on controller BIS_project.Controllers.RegionController (BIS_project).
+2024-04-29 23:56:17.363 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Region, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 23:56:17.378 +05:00 [INF] Executed action BIS_project.Controllers.RegionController.GetAllAsync (BIS_project) in 2830.7485ms
+2024-04-29 23:56:17.378 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.RegionController.GetAllAsync (BIS_project)'
+2024-04-29 23:56:17.378 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/region/getAll - - - 200 - application/json;+charset=utf-8 2867.9834ms
+2024-04-29 23:57:50.758 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - -
+2024-04-29 23:57:50.762 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:57:50.764 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/login - - - 204 - - 5.8290ms
+2024-04-29 23:57:50.766 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 63
+2024-04-29 23:57:50.767 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:57:50.767 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-29 23:57:50.785 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BIS_project.Dtos.UserDto) on controller BIS_project.Controllers.AuthController (BIS_project).
+2024-04-29 23:57:53.731 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[BIS_project.Models.User, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType0`8[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BIS_project.Models.Image, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-29 23:57:53.733 +05:00 [INF] Executed action BIS_project.Controllers.AuthController.Login (BIS_project) in 2947.5966ms
+2024-04-29 23:57:53.733 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.AuthController.Login (BIS_project)'
+2024-04-29 23:57:53.733 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5279/api/v1/login application/json 63 - 200 - application/json;+charset=utf-8 2967.0640ms
+2024-04-29 23:57:53.786 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:57:53.787 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:57:53.787 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 0.8703ms
+2024-04-29 23:57:53.790 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:57:53.793 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:57:53.793 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:57:53.793 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:57:57.289 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:57:57.290 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 3493.6865ms
+2024-04-29 23:57:57.290 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:57:57.290 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 3500.1175ms
+2024-04-29 23:58:05.342 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:58:05.344 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:58:05.344 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 1.8272ms
+2024-04-29 23:58:05.346 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:58:05.348 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:58:05.348 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:58:05.348 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:58:08.473 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:58:08.474 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 3123.5109ms
+2024-04-29 23:58:08.475 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:58:08.475 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 3129.0950ms
+2024-04-29 23:58:13.896 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:58:13.896 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:58:13.897 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 204 - - 0.5915ms
+2024-04-29 23:58:13.898 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - -
+2024-04-29 23:58:13.899 +05:00 [INF] CORS policy execution successful.
+2024-04-29 23:58:13.899 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:58:13.899 +05:00 [INF] Route matched with {action = "GetDriverOrders", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[BIS_project.Helper.APIResponse] GetDriverOrders(System.String) on controller BIS_project.Controllers.DriverController (BIS_project).
+2024-04-29 23:58:17.086 +05:00 [INF] Executing ObjectResult, writing value of type 'BIS_project.Helper.APIResponse'.
+2024-04-29 23:58:17.086 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 3180.5694ms
+2024-04-29 23:58:17.087 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
+2024-04-29 23:58:17.087 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 3188.8815ms

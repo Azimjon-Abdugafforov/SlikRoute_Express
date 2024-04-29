@@ -444,7 +444,7 @@ private async Task reportStatus(string toEmail, string username, string Name, st
             message.From.Add(new MailboxAddress("SilkRoute Express", "abdugafforovazimjon33@gmail.com"));
             message.To.Add(new MailboxAddress(username, toEmail));
             message.Subject = "Account credentials";
-            var bodyBuilder = new BodyBuilder();
+            var bodyBuilder = new BodyBuilder();    
             bodyBuilder.TextBody = $"Dear {Name},\n\nThank you for using our service!\n\nYour login credentials are as follows:\n\n" +
                                    $"Username: **{username}**\nPassword: **{password}**" +
                                    $"\n\nYou are now all set to proceed your request and now you can log in to the platform and follow the identified steps" +
@@ -577,6 +577,24 @@ private async Task reportStatus(string toEmail, string username, string Name, st
             Console.WriteLine(e.Message);
             return false;
         }
+    }
+
+    public async Task<List<Order?>> getUserArchives(string name)
+    {
+        List<Order> orders = await _dataContext.Orders.Where(e => e.Status == "FINISHED" && e.Client.Email == name)
+            .Include(e => e.ProductImages)
+            .Include(e => e.FromDistrict)
+            .Include(e => e.FromRegion)
+            .Include(e => e.ToRegion)
+            .Include(e => e.ToDistrict)
+            .Include(e => e.Client)
+            .Include(e => e.Driver.Truck)
+            .Include(e => e.EndImage)
+            .ToListAsync();
+        
+        if (orders == null) return new List<Order?>();
+
+        return orders; 
     }
     
 }

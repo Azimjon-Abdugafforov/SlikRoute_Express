@@ -177,5 +177,13 @@ public class OrderController : ControllerBase
         }
     }
 
+    [HttpGet("get-user-archives", Name = "getUserArchives")]
+
+    public async Task<APIResponse> getUserArchives(string userName)
+    {
+        var orders = await _orderService.getUserArchives(userName);
+        return new APIResponse(200, orders, "");
+    }
+
     
 }

@@ -56,7 +56,7 @@ public class AuthService : IAuthService
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            Console.WriteLine(e);   
             return null;
         }
     }
@@ -64,6 +64,11 @@ public class AuthService : IAuthService
     {
         try
         {
+            var existUser = await _dbContext.Users.Where(e => e.UserName == request.Username).FirstOrDefaultAsync();
+            if (existUser != null)
+            {
+                return new User();
+            }
             var user = new User
             {
                 UserName = request.Username,
