@@ -551,16 +551,26 @@ private async Task reportStatus(string toEmail, string username, string Name, st
                 .Include(e=> e.Client)
                 .Include(e=> e.Driver)
                 .FirstOrDefaultAsync(e=> e.Id == id);
+            var d = await _dataContext.Drivers.FindAsync(o.Driver.Id);
+           
+          
             if (o == null || o.Status == "FINISHED")
             {
                 return false;
             }
-            o.Status = "FINISHED";
-            o.FinishTime = DateTime.UtcNow;
-            await reportStatus(o.Client.Email, o.Client.Name, o.Client.Name, "FINISHED");
-            await remindDriver(o.Driver.Email, o.Driver.DriverFullName, o.Driver.DriverFullName);
-            await _dataContext.SaveChangesAsync();
-            return true;
+            if (d != null)
+            {
+                d.Status = "Available to ship";
+                d.IsActive = true;
+                o.Status = "FINISHED";
+                o.FinishTime = DateTime.UtcNow;
+                await reportStatus(o.Client.Email, o.Client.Name, o.Client.Name, "FINISHED");
+                await remindDriver(o.Driver.Email, o.Driver.DriverFullName, o.Driver.DriverFullName);
+                await _dataContext.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
         }
         catch (Exception e)
         {

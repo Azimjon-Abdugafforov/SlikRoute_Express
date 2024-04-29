@@ -26,6 +26,7 @@ public class DriverService : IDriverService
         try
         {
             var orders = await _dataContext.Orders
+                .Where(e=> e.Status != "FINISHED")
                 .Include(e=> e.Driver.Truck.TruckImages)
                 .Include(e=> e.Employees)
                 .Include(e=> e.FromDistrict)

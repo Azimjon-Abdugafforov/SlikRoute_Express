@@ -28,6 +28,10 @@ public class DriverController : ControllerBase
         try
         {
             Order driverOrders = await _driverService.GetDriverQuotes(email);
+            if(driverOrders.Status == null)
+            {
+                return new APIResponse(404, "", "No orders found");
+            }
             return new APIResponse(200, driverOrders, "");
         }
         catch (Exception e)
