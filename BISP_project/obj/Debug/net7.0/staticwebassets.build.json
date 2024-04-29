@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+hfV0tSDMskTi7OvAj7caHun17wdlUedhC9CuGCHx3c=",
+  "Hash": "z/b6Q+gck9dIjYFMu6WkYsnjYXurrPATfd6Wwx8Fadw=",
   "Source": "BIS_project",
   "BasePath": "_content/BIS_project",
   "Mode": "Default",
@@ -2238,6 +2238,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/orders/images/a0ff7e5b-6c5d-4d50-963b-c6f484ffc28b.jpg"
+    },
+    {
+      "Identity": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/orders/images/a84ce426-9ac6-4eb4-8aec-fdfd615e49cf.jpeg",
+      "SourceId": "BIS_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/",
+      "BasePath": "_content/BIS_project",
+      "RelativePath": "orders/images/a84ce426-9ac6-4eb4-8aec-fdfd615e49cf.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/orders/images/a84ce426-9ac6-4eb4-8aec-fdfd615e49cf.jpeg"
     },
     {
       "Identity": "/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/orders/images/aae52a69-edcf-40b9-b452-6452bee39e50.jpg",

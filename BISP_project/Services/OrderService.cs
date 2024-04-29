@@ -77,6 +77,8 @@ public class OrderService : IOrderService
                 .Include(e=> e.ProductImages)
                 .Include(e=> e.EndImage)
                 .Include(e=> e.Driver.Truck.TruckImages)
+                .Include(e=> e.Driver.LicensePhoto)
+                .Include(e=> e.Driver.DriverPhoto)
                 .FirstOrDefaultAsync(e => e.Client.Email == username);
              
             return order;
@@ -262,6 +264,64 @@ private async Task reportDriver(string toEmail, string username, string Name)
     }
 }
 
+private async Task remindDriver(string toEmail, string username, string Name)
+{
+    try 
+    {
+        var message = new MimeMessage();
+        message.From.Add(new MailboxAddress("SilkRoute Express", "abdugafforovazimjon33@gmail.com"));
+        message.To.Add(new MailboxAddress(username, toEmail));
+        message.Subject = "Order delivered";
+        var bodyBuilder = new BodyBuilder();
+        bodyBuilder.TextBody = $"Dear {Name},\n\nYou have successfully delivered an order\n\n" +
+                            
+                               $"\n\n You can see the orde details in the archive orders section of the app" +
+                               $"\n\nWe appreciate your trust in our company  " +
+                               $"here to assist you with any questions or concerns. If you have any feedback or need assistance, please don't " +
+                               $"hesitate to contact us.\n\nBest regards,\nThe SilkRoute Express Team";
+        message.Body = bodyBuilder.ToMessageBody();
+        using (var client = new SmtpClient())
+        {
+            await client.ConnectAsync("smtp.gmail.com", 587, false);
+            await client.AuthenticateAsync("abdugafforovazimjon33@gmail.com", "fzazphmwefownyub");
+            await client.SendAsync(message);
+            await client.DisconnectAsync(true);
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e);
+    }
+}
+private async Task reportStatus(string toEmail, string username, string Name, string status)
+{
+    try 
+    {
+        var message = new MimeMessage();
+        message.From.Add(new MailboxAddress("SilkRoute Express", "abdugafforovazimjon33@gmail.com"));
+        message.To.Add(new MailboxAddress(username, toEmail));
+        message.Subject = "Order status changed";
+        var bodyBuilder = new BodyBuilder();
+        bodyBuilder.TextBody = $"Dear {Name},\n\n Your order status changed to {status}\n\n" +
+                            
+                               $"\n\nYou can see the order details by visiting in your account" +
+                               $"\n\nWe appreciate your trust in our company  " +
+                               $"here to assist you with any questions or concerns. If you have any feedback or need assistance, please don't " +
+                               $"hesitate to contact us.\n\nBest regards,\nThe SilkRoute Express Team";
+        message.Body = bodyBuilder.ToMessageBody();
+        using (var client = new SmtpClient())
+        {
+            await client.ConnectAsync("smtp.gmail.com", 587, false);
+            await client.AuthenticateAsync("abdugafforovazimjon33@gmail.com", "fzazphmwefownyub");
+            await client.SendAsync(message);
+            await client.DisconnectAsync(true);
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e);
+    }
+}
     
     private async Task<Client?> CreteClient(BaseOrderDto order)
     {
@@ -432,28 +492,42 @@ private async Task reportDriver(string toEmail, string username, string Name)
     {
         try
         {
-            var o = await _dataContext.Orders
-                .Include(e => e.StartImage)
-                .FirstOrDefaultAsync(e => e.Id == id);
-            if (o == null || o.Status == "SHIPPING")
+            // Find the order with the given ID and include the related client information.
+            var order = await _dataContext.Orders
+                .Include(o => o.Client)
+                .FirstOrDefaultAsync(o => o.Id == id);
+
+            // If the order doesn't exist or it's already in the 'SHIPPING' status, return an error message.
+             if (order == null)
             {
-                return "Invalid order Id";
+                return "Order not found";
             }
-            if (o.StartImage == null)
+            else if (order.Status == "SHIPPING")
             {
-                return "Upload start images first!";
+                return "Order is already being shipped";
             }
-            o.Status = "SHIPPING";
-            o.StartTime = DateTime.UtcNow;
+
+            // Update the order status to 'SHIPPING' and set the start time.
+            order.Status = "SHIPPING";
+            order.StartTime = DateTime.UtcNow;
+
+            // Send a report about the status change to the client's email.
+            await reportStatus(order.Client.Email, order.Client.Name, order.Client.Name, "SHIPPING");
+
+            // Save the changes to the database.
             await _dataContext.SaveChangesAsync();
-            return "Ship started";
+
+            return "Shipping started successfully";
         }
-        catch (Exception e)
+        catch (Exception ex)
         {
-            Console.WriteLine(e.Message);
-            throw;
+            // Log the exception message for troubleshooting.
+            Console.WriteLine($"Error starting shipping: {ex.Message}");
+            // Return a generic error message.
+            return "An error occurred while starting shipping";
         }
     }
+
     public async Task<string> RateOrder(int id, int rating)
     {
         try
@@ -473,13 +547,18 @@ private async Task reportDriver(string toEmail, string username, string Name)
     {
         try
         {
-            Order o = await _dataContext.Orders.FindAsync(id);
+            Order o = await _dataContext.Orders
+                .Include(e=> e.Client)
+                .Include(e=> e.Driver)
+                .FirstOrDefaultAsync(e=> e.Id == id);
             if (o == null || o.Status == "FINISHED")
             {
                 return false;
             }
             o.Status = "FINISHED";
             o.FinishTime = DateTime.UtcNow;
+            await reportStatus(o.Client.Email, o.Client.Name, o.Client.Name, "FINISHED");
+            await remindDriver(o.Driver.Email, o.Driver.DriverFullName, o.Driver.DriverFullName);
             await _dataContext.SaveChangesAsync();
             return true;
         }
