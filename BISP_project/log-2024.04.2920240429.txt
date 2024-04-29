@@ -2053,3 +2053,40 @@ System.TimeoutException: The operation has timed out.
 2024-04-29 12:07:45.691 +05:00 [INF] Executed action BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project) in 6850.7238ms
 2024-04-29 12:07:45.696 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.DriverController.GetDriverOrders (BIS_project)'
 2024-04-29 12:07:45.724 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/driver/get-driver-order?email=abdugafforovazimjon33@gmail.com - - - 200 - application/json;+charset=utf-8 7012.3560ms
+2024-04-29 12:12:49.993 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/api/v1/region/getAll - -
+2024-04-29 12:12:50.029 +05:00 [INF] CORS policy execution successful.
+2024-04-29 12:12:50.034 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.RegionController.GetAllAsync (BIS_project)'
+2024-04-29 12:12:50.083 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BIS_project.Models.Region]] GetAllAsync() on controller BIS_project.Controllers.RegionController (BIS_project).
+2024-04-29 12:12:56.086 +05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BIS_project.Models.Region, BIS_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 12:12:56.098 +05:00 [INF] Executed action BIS_project.Controllers.RegionController.GetAllAsync (BIS_project) in 6015.0557ms
+2024-04-29 12:12:56.099 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.RegionController.GetAllAsync (BIS_project)'
+2024-04-29 12:12:56.099 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/api/v1/region/getAll - - - 200 - application/json;+charset=utf-8 6121.1678ms
+2024-04-29 12:17:26.209 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - -
+2024-04-29 12:17:26.312 +05:00 [INF] The file /Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg was not modified
+2024-04-29 12:17:26.313 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - - - 304 - image/jpeg 109.6715ms
+2024-04-29 14:09:13.493 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/undefined - -
+2024-04-29 14:09:13.535 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/undefined - - - 404 0 - 45.8559ms
+2024-04-29 14:11:28.235 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/undefined - -
+2024-04-29 14:11:28.238 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/undefined - - - 404 0 - 3.9576ms
+2024-04-29 14:11:45.630 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/undefined - -
+2024-04-29 14:11:45.633 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/undefined - - - 404 0 - 3.3977ms
+2024-04-29 14:12:51.612 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - -
+2024-04-29 14:12:51.643 +05:00 [INF] The file /Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg was not modified
+2024-04-29 14:12:51.645 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - - - 304 - image/jpeg 33.1571ms
+2024-04-29 14:50:59.879 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - -
+2024-04-29 14:50:59.904 +05:00 [INF] The file /Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg was not modified
+2024-04-29 14:50:59.905 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - - - 304 - image/jpeg 27.2706ms
+2024-04-29 14:59:19.039 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/orders/images/a84ce426-9ac6-4eb4-8aec-fdfd615e49cf.jpeg - -
+2024-04-29 14:59:19.246 +05:00 [INF] Sending file. Request path: '/orders/images/a84ce426-9ac6-4eb4-8aec-fdfd615e49cf.jpeg'. Physical path: '/Users/azizjonabdugafforov/Desktop/Code/Azimjon_Abdugafforov_00012189/SlikRoute_Express/BISP_project/wwwroot/orders/images/a84ce426-9ac6-4eb4-8aec-fdfd615e49cf.jpeg'
+2024-04-29 14:59:19.273 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/orders/images/a84ce426-9ac6-4eb4-8aec-fdfd615e49cf.jpeg - - - 200 12927 image/jpeg 234.9934ms
+2024-04-29 15:06:52.365 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/rate-order?id=12&rating=4 - 0
+2024-04-29 15:06:52.427 +05:00 [INF] CORS policy execution successful.
+2024-04-29 15:06:52.429 +05:00 [INF] Executing endpoint 'BIS_project.Controllers.OrderController.RatingOrder (BIS_project)'
+2024-04-29 15:06:52.480 +05:00 [INF] Route matched with {action = "RatingOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RatingOrder(Int32, Int32) on controller BIS_project.Controllers.OrderController (BIS_project).
+2024-04-29 15:07:02.160 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-04-29 15:07:02.305 +05:00 [INF] Executed action BIS_project.Controllers.OrderController.RatingOrder (BIS_project) in 9823.6386ms
+2024-04-29 15:07:02.578 +05:00 [INF] Executed endpoint 'BIS_project.Controllers.OrderController.RatingOrder (BIS_project)'
+2024-04-29 15:07:02.579 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5279/api/v1/base-order/rate-order?id=12&rating=4 - 0 - 200 - text/plain;+charset=utf-8 10218.1942ms
+2024-04-29 15:07:33.230 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - -
+2024-04-29 15:07:33.242 +05:00 [INF] The file /Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg was not modified
+2024-04-29 15:07:33.243 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Drivers/images/a1a819eb-ca2c-491b-9844-cbe4e1ccad07.jpeg - - - 304 - image/jpeg 12.7323ms
